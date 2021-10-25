@@ -57,7 +57,7 @@ description: Can't learn language from the radio.
 25. [VL-T5: Unifying Vision-and-Language Tasks via Text Generation (2021)](#vl-t5-unifying-vision-and-language-tasks-via-text-generation-2021)
 26. [Seeing Out of tHe bOx: End-to-End Pre-training for Vision-Language Representation Learning (2021)](#seeing-out-of-the-box-end-to-end-pre-training-for-vision-language-representation-learning-2021)
 27. [E2E-VLP: End-to-End Vision-Language Pre-training Enhanced by Visual Learning (2021)](#e2e-vlp-end-to-end-vision-language-pre-training-enhanced-by-visual-learning-2021)
-28. [E2E-VLP: End-to-End Vision-Language Pre-training Enhanced by Visual Learning (2021)](#an-image-is-worth-16x16-words-transformers-for-image-recognition-at-scale-2021)
+28. [An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale (2021)](#an-image-is-worth-16x16-words-transformers-for-image-recognition-at-scale-2021)
 29. [CoAtNet: Marrying Convolution and Attention for All Data Sizes (2021)](#coatnet-marrying-convolution-and-attention-for-all-data-sizes-2021)
 30. [Bottom-Up and Top-Down Attention for Image Captioning and Visual Question Answering (2018)](#bottom-up-and-top-down-attention-for-image-captioning-and-visual-question-answering-2018)
 31. [Watch, Listen, and Describe: Globally and Locally Aligned Cross-Modal Attentions for Video Captioning (2018)](#watch-listen-and-describe-globally-and-locally-aligned-cross-modal-attentions-for-video-captioning-2018)
