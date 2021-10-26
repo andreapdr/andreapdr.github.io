@@ -406,7 +406,7 @@ ViLBERT consists of two parallel BERT-style models operating over image regions 
 ### Multi-Modality Cross-Attention Network for Image and Sentence Matching (2020)
 
 * `Reference:` [Wei et al., (2020)][Wei et al., (2020)]
-
+* `TASK SPECIFIC: Image-Text Retrieval`
 <figure>
 <img src="/images/mmca.png" alt="MMCA architecture" class="center">
 </figure>
@@ -445,8 +445,7 @@ which models both the inter-modality (self-attention) as well as the cross-modal
 ### Cross-Modal Self-Attention for Referring Image Segmentation (2019)
 
 * `Reference:` [Ye et al., (2019)][Ye et al., (2019)]
-* `CVPR2019`
-
+* `TASK SPECIFIC: Image Segmentation`
 
 <figure>
 <img src="/images/cmsa.png" alt="cross-modal self-attention" class="center">
@@ -804,25 +803,41 @@ Images can be considered as prefix for their textual descriptions as they often 
 **Architecture**: PrefixLM enabled bidirectional attention within the prefix sequence, and thus it is applicable for both decoder-only and encoder-decoder sequence-to-sequence language models.
 
 
-### Learning Visual Representations with Caption Annotations (2020)
-
-* `Reference:` [Saryildiz et al., (2020)][Saryildiz et al., (2020)]
-* `Design new pre-training tasks`
-
-<figure>
-<img src="/images/icmlm.png" alt="ICMLM" class="center">
-</figure>
-
-
 ### Villa: Large-Scale Adversarial Training for Vision-and-Language Representation Learning (2020) 
 
 * `Reference:` [Gan et al.,(2020)][Gan et al.,(2020)]
-* `TODO`
+
+<figure>
+<img src="/images/villa.png" alt="villa" class="center">
+</figure>
+
+Vision-and-Language Large-scale Adversarial Training (VILLA) advocate the use of adversarial training in VLP. VILLA consists of two training stages: (1) task-agnostic adversarial pre-training(APT), and (2) task-specific adversarial fine-tuning (AFT). To bring in more flexibility in generating adversarial examples, adversarial training is performed on the embedding level for multi-modalities, instead of operating on image pixel and sub-work token as in conventional practice. 
+
+For text modality, adversarial perturbation are added to word embeddings. For image modality, perturbations are directly added to extracted image-region features (ROI). To power efficient large-scale training, "free" adversarial training strategy is deployed. It obtains the gradients of parameters with almost no extra cost when computing the gradients of inputs (`AN: HOW?`). Perturbations are performed one modality at a time. Perturbations are only applied to image and word embeddings, leaving other components (positional embeddings, segment embeddings etc.) of the multimodal features unchanged.
+
+$$
+\min_{\theta} \mathbb{E}_{(x_{\text{img}}, x_{\text{txt}}, y) \sim \mathcal{D}} \lbrack \mathcal{L}_{\text{std}}(\theta) + \mathcal{L}_{\text{at}}(\theta) + \alpha \cdot \mathcal{L}_{\text{kl}}(\theta) \rbrack
+$$
+
+where $$ \mathcal{L}_{\text{std}}(\theta) = L(f_{\theta}(x_{\text{img}}, x_{\text{txt}}), y) $$ is the cross-entropy loss on clean data, $$ \mathcal{L}_{\text{at}}(\theta)$$ is the label-preserving AT loss, and $$\mathcal{L}_{\text{kl}}(\theta)$$ is a finer-grained adversarial regularization term.
+
+$$
+\mathcal{L}_{\text{at}}(\theta) = \max_{||\delta_{\text{img}}|| \leq \epsilon} L(f_{\theta}(x_{\text{img}} + \delta_{\text{img}}, x_{\text{txt}}), y) + \max_{||\delta_{\text{txt}}|| \leq \epsilon} L(f_{\theta}(x_{\text{img}}, x_{\text{txt}} + \delta_{\text{txt}}), y) 
+$$
+
+$$
+\mathcal{L}_{\text{kl}}(\theta) = \max_{||\delta_{\text{img}}|| \leq \epsilon} L_{\text{kl}}(f_{\theta}(x_{\text{img}} + \delta_{\text{img}}, x_{\text{txt}}), f_{\theta}(x_{\text{img}}, x_{\text{txt}})) + 
+\max_{||\delta_{\text{txt}}|| \leq \epsilon} L_{\text{kl}}(f_{\theta}(x_{\text{img}}, x_{\text{txt}} + \delta_{\text{txt}}), f_{\theta}(x_{\text{img}}, x_{\text{txt}}))
+$$
 
 ### ERNIE-ViL: Knowledge Enhanced Vision-Language Representations Through Scene Graph (2021)
 
 * `Reference:` [Yu et al.,(2021)][Yu et al.,(2021)]
-* `TODO`
+* `Leverage Scene Graph Parser to meaningfully/coherently mask part of the image-text input (New objectives: (1) Object prediction, (2) Attribute Prediction, and (3) Relationship Prediction. Nevertheless, they do also retrain the MLM and Masked Region Prediction losses. `
+
+<figure>
+<img src="/images/ernie_vil.png" alt="ERNIE-ViL" class="center">
+</figure>
 
 
 ### UNIMO: Towards Unified-Modal Understanding and Generation via Cross-Modal Contrastive Learning (2021)
@@ -874,6 +889,16 @@ Images can be considered as prefix for their textual descriptions as they often 
 * `TODO`
 
 
+### Learning Visual Representations with Caption Annotations (2020)
+
+* `Reference:` [Saryildiz et al., (2020)][Saryildiz et al., (2020)]
+* `Design new pre-training tasks`
+
+<figure>
+<img src="/images/icmlm.png" alt="ICMLM" class="center">
+</figure>
+
+
 ## References:
 ### Cross-Modal Architectures
 
@@ -909,7 +934,7 @@ Images can be considered as prefix for their textual descriptions as they often 
 ### Surveys:
 1. [Multimodal Research in Vision and Language: A Review of Current and Emerging Trends (Uppal et al., (2020))][Uppal et al., (2020)]
 2. [A Survey on Vision Transformer (Han et al., (2021))][Han et al., (2021)]
-3. [Transformers in Vision: A Survey (Khan et al., (2021))][Khan et al., (2021 )]
+3. [Transformers in Vision: A Survey (Khan et al., (2021))][Khan et al., (2021)]
 
 
 ### Co-Learning (Transfer Learning approach to multi-modality)
