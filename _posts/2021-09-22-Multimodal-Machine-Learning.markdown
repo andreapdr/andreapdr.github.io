@@ -906,10 +906,15 @@ Images can be considered as prefix for their textual descriptions as they often 
 30. [VideoBERT: A Joint Model for Video and Language Representation Learning (Sun et al., (2019))][Sun et al., (2019)]
 31. [SimVLM: Simple Visual Language Model Pretraining with Weak Supervision (Wang et al., (2021))][Wang et al., (2021)]
 
+### Surveys:
+1. [Multimodal Research in Vision and Language: A Review of Current and Emerging Trends (Uppal et al., (2020))][Uppal et al., (2020)]
+2. [A Survey on Vision Transformer (Han et al., (2021))][Han et al., (2021)]
+3. [Transformers in Vision: A Survey (Khan et al., (2021))][Khan et al., (2021 )]
+
 
 ### Co-Learning (Transfer Learning approach to multi-modality)
 1. [Foundations of Multimodal Co-learning (Zadeh et al., (2020))][Zadeh et al., (2020)]
-2. [Multimodal Co-learning: Challenges, Applications with Datasets, Recent Advances and Future Directions (Rahate et al., (2021))][Rahate et al., (2021)]
+2. [Multimodal Co-learning: Challenges, Applications with Datasets, Recent Advances and Future Directions (Rahate et al., (2021))][Rahate et al., (2021)] **Check this one once again**
 
 ### Extras:
 21. [AdapterHub: A Framework for Adapting Transformers (Pfeiffer et al., (2020))][Pfeiffer et al., (2020)]
@@ -973,13 +978,15 @@ Images can be considered as prefix for their textual descriptions as they often 
 [Wang et al., (2021)]: https://arxiv.org/abs/2108.10904
 [Jia et al., (2021)]: https://arxiv.org/abs/2102.05918
 [Dai et al., (2021)]: https://arxiv.org/abs/2106.04803
-
+[Uppal et al., (2020)]: https://arxiv.org/abs/2010.09522
+[Han et al., (2021)]: https://arxiv.org/abs/2012.12556
+[Khan et al., (2021)]: https://arxiv.org/abs/2101.01169
 
 [Gan et al.,(2020)]: https://arxiv.org/abs/2006.06195
 [Yu et al.,(2021)]: https://arxiv.org/abs/2006.16934
 [Li et al.,(2021)]: https://arxiv.org/abs/2012.15409
-[Hu et al.,(2021)]: https://arxiv.org/abs/2009.13682
-[Cho et al.,(2021)]: https://arxiv.org/abs/2102.0277
+[Hu et al.,(2021)]: https://arxiv.org/abs/2009.13682 
+[Cho et al.,(2021)]: https://arxiv.org/abs/2102.02779
 
 [MulT GitHub]: https://github.com/yaohungt/Multimodal-Transformer
 [covarep]: https://ieeexplore.ieee.org/abstract/document/6853739
