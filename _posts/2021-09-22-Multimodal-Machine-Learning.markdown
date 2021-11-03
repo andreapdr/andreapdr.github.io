@@ -48,6 +48,7 @@ description: Can't learn language from the radio.
 24. [VIVO: Visual Vocabulary Pre-Training for Novel Object Captioning (2021)](#vivo-visual-vocabulary-pre-training-for-novel-object-captioning-2021)
 13. [VinVL: Revisiting Visual Representations in Vision-Language Models (2021)](#vinvl-revisiting-visual-representations-in-vision-language-models-2021)
 22. [ERNIE-ViL: Knowledge Enhanced Vision-Language Representations Through Scene Graph (2021)](#ernie-vil-knowledge-enhanced-vision-language-representations-through-scene-graph-2021)
+30. [InterBERT: Vision-and-Language Interaction for Multi-modal Pretraining (2021)](#interbert-vision-and-language-interaction-for-multi-modal-pretraining)
 23. [UNIMO: Towards Unified-Modal Understanding and Generation via Cross-Modal Contrastive Learning (2021)](#unimo-towards-unified-modal-understanding-and-generation-via-cross-modal-contrastive-learning-2021)
 25. [VL-T5: Unifying Vision-and-Language Tasks via Text Generation (2021)](#vl-t5--vl-bart-unifying-vision-and-language-tasks-via-text-generation-2021)
 14. [VirTex: Learning Visual Representations from Textual Annotations (2021)](#virtex-learning-visual-representations-from-textual-annotations-2021)
@@ -825,6 +826,24 @@ where the dataset $$(\mathbf{w,q,v;c}) \sim \mathcal{\tilde{D}}$$ contains 50% m
 * Scene Graph Parser used in the paper: [SPICE: Semantic Propositional Image Caption Evaluation (Anderson et al., (2016))][Anderson et al., (2016)]. `(Haven't read this yet: however, from the slides, it leverages dependency parsing in order to construct the scene graph).`
 
 
+### InterBERT: Vision-and-Language Interaction for Multi-modal Pretraining
+
+* `Reference:` [Lin et al., (2021)][Lin et al.,(2021)]
+* `LAB`: Peking University and Alibaba Research
+* `AN: I don't understand what is the input to the (SINGLE) two-stream extractor module (given that is called "two-stream" each stream should be fed with unimodal input. So they are more simply two self-attention (unimodal) transformers?). Is it only deployed at pre-training time? while at testing/inference they leverage the output from the single-stream interaction module? Nevertheless, they test the model in Image-Text Retrieval and Visual Commonsense Reasoning, thus they could leverage the unimodal outputs...`
+* `AN: this paper is not well-written!`
+
+<figure>
+<img src="/images/m6.png" alt="m6" class="center">
+</figure>
+
+They try to explicitly model both inter and intra-modalities with an *hybrid*-stream architecture. 
+Image-caption pairs are processed by two embedder. Their output is concatenated and fed to a so-called **Single-Stream Interaction Module** (i.e., a transformer). This module takes care of modeling the inter-modality relations via self-attention on the concatenated input. Then, **a two-stream extraction module** is leveraged to re-construct uni-modal representations (i.e., it composed by two self-attention transformers). Each extractor is based on self-attention and DNN (`AN: They are also confused about this. Is it a single module with multiple streams, or two independent modules?`). The module is responsible for generating high-level object representations and text representations (i.e., it leverages self-attention on the single modality to specialize the multimodal representation, the output of the single-stream interaction module, for a uni-modal task).
+
+Excpet for these (`AN: ??? the output of the two-stream module ???`), the model generates a general image representation and text representation for finetuning. The image and text representations are transformed into a **cross-modal representation by a multi-layer feed-forward network** (`AN: what?! where!?`)
+
+The model is pre-trained on Masked Group Modeling, which they dub Masked Segment Modeling, because they try to mask semantically contiguous elements both in the text and the image domain. They also mask the region image MRM (by masking object which have high proportion of mutual intersection), and set the model to predict the masked categories of the region (`AN: they do not specify where they retrieve/create the labels`). The model is also trained on Image-Text Matching with Hard Negatives. They dub it with Hard Negatives because they provide as negative samples, image-text pairs retrieved via TFIDF sorting (wrt the caption). The scoring between the modalities is computed by a MLP. Its input is constructed by the element-wise multiplication between image and text representations (the output representations at position of `[CLS]` extracted by the two (`AN: or one?`) extractor module(s)).
+
 ### UNIMO: Towards Unified-Modal Understanding and Generation via Cross-Modal Contrastive Learning (2021)
 
 * `Reference:` [Li et al.,(2021)][Li et al.,(2021)]
@@ -1062,6 +1081,7 @@ Images can be considered as prefix for their textual descriptions as they often 
 [Khan et al., (2021)]: https://arxiv.org/abs/2101.01169
 
 [Gan et al.,(2020)]: https://arxiv.org/abs/2006.06195
+[Lin et al.,(2021)]: https://arxiv.org/abs/2003.13198
 [Yu et al.,(2021)]: https://arxiv.org/abs/2006.16934
 [Li et al.,(2021)]: https://arxiv.org/abs/2012.15409
 [Hu et al.,(2021)]: https://arxiv.org/abs/2009.13682 
