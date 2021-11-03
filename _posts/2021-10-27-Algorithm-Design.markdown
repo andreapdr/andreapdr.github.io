@@ -3,7 +3,7 @@ layout: post
 title:  "Algorithm Design"
 date:   2021-10-27 10:10:00 +0200
 categories: Algorithms
-description: Courser notes for Algorithm Design 2020-2021
+description: Some notes for Algorithm Design 2020-2021
 ---
 
 <head>
