@@ -832,6 +832,7 @@ where the dataset $$(\mathbf{w,q,v;c}) \sim \mathcal{\tilde{D}}$$ contains 50% m
 * `LAB`: Peking University and Alibaba Research
 * `AN: I don't understand what is the input to the (SINGLE) two-stream extractor module (given that is called "two-stream" each stream should be fed with unimodal input. So they are more simply two self-attention (unimodal) transformers?). Is it only deployed at pre-training time? while at testing/inference they leverage the output from the single-stream interaction module? Nevertheless, they test the model in Image-Text Retrieval and Visual Commonsense Reasoning, thus they could leverage the unimodal outputs...`
 * `AN: this paper is not well-written!`
+* `Source code`: [InterBERT GitHub](https://github.com/black4321/InterBERT)
 
 <figure>
 <img src="/images/m6.png" alt="m6" class="center">
@@ -922,7 +923,7 @@ The model is pre-trained under a multi-task setup with diverse pre-training task
 
 * `Reference:` [Desai et al., (2021)][Desai et al., (2020)]
 * `LAB`: University of Michigan
-* `Source Code:` [GitHub VirTex][GitHub Virtex]
+* `Source Code:` [VirTex GitHub][GitHub Virtex]
 
 <figure>
 <img src="/images/virtex.png" alt="virtex" class="center">
