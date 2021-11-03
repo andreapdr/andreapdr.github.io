@@ -25,46 +25,39 @@ description: Can't learn language from the radio.
 </style>
 
 
-### **TODO**: Look for Conferences, workshops...
-### **TODO**: Order by publication date
-### **TODO**: Data amount?
+* `Papers are ordered by last-revision date on arxiv.`
 
 # **Index**:
 1. [Tensor Fusion Network for Multimodal Sentiment Analysis (2017)](#tensor-fusion-network-for-multimodal-sentiment-analysis-2017)
 2. [Memory Fusion Network for Multi-view Sequential Learning (2018)](#memory-fusion-network-for-multi-view-sequential-learning-2018)
 3. [Multi-Attention Recurrent Network for Human Communication Comprehension (2018)](#multi-attention-recurrent-network-for-human-communication-comprehension-2018)
 4. [Multimodal Language Analysis with Recurrent Multistage Fusion (2018)](#multimodal-language-analysis-with-recurrent-multistage-fusion-2018)
-5. [MAG-BERT: Integrating Multimodal Information in Large Pretrained Transformers (2019)](#mag-bert-integrating-multimodal-information-in-large-pretrained-transformers-2019)
-6. [Multimodal Transformer for Unaligned Multimodal Language Sequences (2020)](#multimodal-transformer-for-unaligned-multimodal-language-sequences-2020)
-7. [VL-BERT: Pre-training of Generic Visual-Linguistic Representations (2019)](#vl-bert-pre-training-of-generic-visual-linguistic-representations-2019)
 8. [ViLBERT: Pretraining Task-Agnostic Visiolinguistic Representation fro Vision-and-Language Tasks (2019)](#vilbert-pretraining-task-agnostic-visiolinguistic-representation-fro-vision-and-language-tasks-2019)
-9. [Multi-Modality Cross-Attention Network for Image and Sentence Matching (2020)](#multi-modality-cross-attention-network-for-image-and-sentence-matching-2020)
 10. [Cross-Modal Self-Attention for Referring Image Segmentation (2019)](#cross-modal-self-attention-for-referring-image-segmentation-2019)
-11. [Learning Transferable Visual Models From Natural Language Supervision (2021)](#learning-transferable-visual-models-from-natural-language-supervision-2021)
-12. [Oscar: Object-Semantics Aligned Pre-training for Vision-Language Tasks (2020)](#oscar-object-semantics-aligned-pre-training-for-vision-language-tasks-2020)
-13. [VinVL: Revisiting Visual Representations in Vision-Language Models (2021)](#vinvl-revisiting-visual-representations-in-vision-language-models-2021)
-14. [VirTex: Learning Visual Representations from Textual Annotations (2020)](#virtex-learning-visual-representations-from-textual-annotations-2020)
-15. [UNITER: UNiversal Image-TExt Representation Learning (2020)](#uniter-universal-image-text-representation-learning-2020)
-16. [Unicoder-VL: A Universal Encoder for Vision and Language by Cross-modal Pre-training (2019)](#unicoder-vl-a-universal-encoder-for-vision-and-language-by-cross-modal-pre-training-2019)
+6. [Multimodal Transformer for Unaligned Multimodal Language Sequences (2019)](#multimodal-transformer-for-unaligned-multimodal-language-sequences-2019)
 17. [VisualBERT: A Simple and Performant Baseline for Vision and Language (2019)](#visualbert-a-simple-and-performant-baseline-for-vision-and-language-2019)
+7. [VL-BERT: Pre-training of Generic Visual-Linguistic Representations (2019)](#vl-bert-pre-training-of-generic-visual-linguistic-representations-2019)
 18. [LXMERT: Learning Cross-Modality Encoder Representations from Transformers (2019)](#lxmert-learning-cross-modality-encoder-representations-from-transformers-2019)
-19. [Learning Visual Representations with Caption Annotations (2020)](#learning-visual-representations-with-caption-annotations-2020)
-20. [SimVLM: Simple Visual Language Model Pretraining with Weak Supervision (2021)](#simvlm-simple-visual-language-model-pretraining-with-weak-supervision-2021)
+16. [Unicoder-VL: A Universal Encoder for Vision and Language by Cross-modal Pre-training (2019)](#unicoder-vl-a-universal-encoder-for-vision-and-language-by-cross-modal-pre-training-2019)
+9. [Multi-Modality Cross-Attention Network for Image and Sentence Matching (2020)](#multi-modality-cross-attention-network-for-image-and-sentence-matching-2020)
+12. [Oscar: Object-Semantics Aligned Pre-training for Vision-Language Tasks (2020)](#oscar-object-semantics-aligned-pre-training-for-vision-language-tasks-2020)
+15. [UNITER: UNiversal Image-TExt Representation Learning (2020)](#uniter-universal-image-text-representation-learning-2020)
 21. [Villa: Large-Scale Adversarial Training for Vision-and-Language Representation Learning (2020)](#villa-large-scale-adversarial-training-for-vision-and-language-representation-learning-2020)
+5. [MAG-BERT: Integrating Multimodal Information in Large Pretrained Transformers (2020)](#mag-bert-integrating-multimodal-information-in-large-pretrained-transformers-2020)
+11. [Learning Transferable Visual Models From Natural Language Supervision (2021)](#learning-transferable-visual-models-from-natural-language-supervision-2021)
+24. [VIVO: Visual Vocabulary Pre-Training for Novel Object Captioning (2021)](#vivo-visual-vocabulary-pre-training-for-novel-object-captioning-2021)
+13. [VinVL: Revisiting Visual Representations in Vision-Language Models (2021)](#vinvl-revisiting-visual-representations-in-vision-language-models-2021)
 22. [ERNIE-ViL: Knowledge Enhanced Vision-Language Representations Through Scene Graph (2021)](#ernie-vil-knowledge-enhanced-vision-language-representations-through-scene-graph-2021)
 23. [UNIMO: Towards Unified-Modal Understanding and Generation via Cross-Modal Contrastive Learning (2021)](#unimo-towards-unified-modal-understanding-and-generation-via-cross-modal-contrastive-learning-2021)
-24. [VIVO: Visual Vocabulary Pre-Training for Novel Object Captioning (2021)](#vivo-visual-vocabulary-pre-training-for-novel-object-captioning-2021)
-25. [VL-T5: Unifying Vision-and-Language Tasks via Text Generation (2021)](#vl-t5-unifying-vision-and-language-tasks-via-text-generation-2021)
-26. [Seeing Out of tHe bOx: End-to-End Pre-training for Vision-Language Representation Learning (2021)](#seeing-out-of-the-box-end-to-end-pre-training-for-vision-language-representation-learning-2021)
-27. [E2E-VLP: End-to-End Vision-Language Pre-training Enhanced by Visual Learning (2021)](#e2e-vlp-end-to-end-vision-language-pre-training-enhanced-by-visual-learning-2021)
-28. [An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale (2021)](#an-image-is-worth-16x16-words-transformers-for-image-recognition-at-scale-2021)
-29. [CoAtNet: Marrying Convolution and Attention for All Data Sizes (2021)](#coatnet-marrying-convolution-and-attention-for-all-data-sizes-2021)
-30. [Bottom-Up and Top-Down Attention for Image Captioning and Visual Question Answering (2018)](#bottom-up-and-top-down-attention-for-image-captioning-and-visual-question-answering-2018)
-31. [Watch, Listen, and Describe: Globally and Locally Aligned Cross-Modal Attentions for Video Captioning (2018)](#watch-listen-and-describe-globally-and-locally-aligned-cross-modal-attentions-for-video-captioning-2018)
+25. [VL-T5: Unifying Vision-and-Language Tasks via Text Generation (2021)](#vl-t5--vl-bart-unifying-vision-and-language-tasks-via-text-generation-2021)
+14. [VirTex: Learning Visual Representations from Textual Annotations (2021)](#virtex-learning-visual-representations-from-textual-annotations-2021)
+20. [SimVLM: Simple Visual Language Model Pretraining with Weak Supervision (2021)](#simvlm-simple-visual-language-model-pretraining-with-weak-supervision-2021)
+
 
 ### Tensor Fusion Network for Multimodal Sentiment Analysis (2017)
 
 *  `Reference:` [Zadeh et al., (2017)][Zadeh et al., (2017)]
+* `LAB`: Carnegie Mellon University (CMU)
 
 <figure>
 <img src="/images/tfn.png" alt="TFN" class="center">
@@ -102,7 +95,9 @@ where $$\otimes$$ indicates the outer product between vectors.
 
 ### Memory Fusion Network for Multi-view Sequential Learning (2018)
 
+
 *  `Reference:` [Zadeh, Liang, et al., (2018)][Zadeh, Liang, et al., (2018)]
+* `LAB`: Carnegie Mellon University (CMU)
 *  `Memory is used, together with attention, when the attention mechanism is not able to look at all the hidden states (b/c they are discarded or whatsoever) - usually deployed with RNN, since Transformer architectures ditch the recurrent behavior and process the whole input in a single time-step`
 * `Difference wrt MARN: MFN has three separate LSTMs to model each modality separately and a multi-view gated memory to synchronize among them.`
 
@@ -148,6 +143,7 @@ $$
 ### Multi-Attention Recurrent Network for Human Communication Comprehension (2018)
 
 *  `Reference:` [Zadeh et al., (2018)][Zadeh et al., (2018)]
+* `LAB`: Carnegie Mellon University (CMU)
 * `Difference wrt MFN: MARN models view-specific interactions using hybrid LSTM memories and cross-modal interactions using a Multi-Attention Block (MAB).`
 
 MARN has two key components: Long-Short Term Hybrid Memory and Multi-Attention Block. The first one, LSTHM, is an extension of the Long Short-Term Memory (LSTM) by reformulating the memory component to carry to carry hybrid information (`AN: Essentially, the LSTHM takes as input the cross-view vector (dynamics) as well as the canonical input at the given time-step and the previous hidden state` ). 
@@ -192,6 +188,7 @@ The set of networks $$\{ C_m : m \in M \}$$ maps the attended outputs of each mo
 ### Multimodal Language Analysis with Recurrent Multistage Fusion (2018)
 
 *  `Reference:` [Liang et al., (2018)][Liang et al., (2018)]
+* `LAB`: Carnegie Mellon University (CMU)
 
 Recurrent Multistage Fusion Network (RMFN) decomposes the fusion problem into multiple stages, each of them focused on a subset of multimodal signals for specialized, effective fusion `(AN: essentially, the multimodal input (i.e, concatenation of the output (hybird) LSTM - early stage approach) is scored via attention mechanism. Such scored representation (a.k.a., HIGHLIGHTED) is passed to an LSTM module (a.k.a., FUSE) which additionally takes as input the previous FUSE module output. This process (HIGHLIGHT and FUSE) is repeated K times (hence, multistage). Finally, each FUSEd output is concatenated and fed to a NN (a.k.a., SUMMARIZE) that outputs a multimodal context vector that is fed to the LSTHM. The overall process is repeated for the whole sequence)`.
 
@@ -238,144 +235,11 @@ $$
 where $$z_t$$ is the final output of the multistage fusion process and represents all cross-modal interactions discovered at time $$t$$. The summarized cross-modal interaction is then fed into the intra-modal recurrent network.
 
 
-### MAG-BERT: Integrating Multimodal Information in Large Pretrained Transformers (2019)
-
-*  `Reference:` [Rahman et al., (2019)][Rahman et al., (2019)]
-
-Multimodal Adaptation Gate (MAG) is a module designed to be attached to pre-trained models such as BERT and XLNet. MAG accommodate for multimodal non-verbal finetuning. It does so by generating a shift (by means of a displacement vector) to internal distribution of the pre-trained model. Such a shift is conditioned on visual and acoustic modalities.
-
-In absence of multimodal accompaniments, each word falls withing some part of a semantic space, depending only on the meaning of the word in a linguistic structure (i.e., a sentence). Nonverbal behavior can have an impact on the meaning of words, and therefore on the position of words in this semantic space. Together language and nonverbal accompaniments decide on the new position of the word in the semantic space. This is achieved by means of a displacement vector (i.e., a vector with a trajectory and magnitude that shifts the language-only position).
-
-<figure>
-<img src="/images/mag.png" alt="MAG" class="center" width="50%">
-</figure>
-
-
-MAG units receives three inputs, one is purely lexical, one is visual and one is acoustic. Let the triplet $$(Z_i, A_i, V_i)$$ denote these inputs for the $$i$$-th word in a sequence. The displacement vector is factorized into bimodal components $$\lbrack Z_i;A_i\rbrack$$ and $$\lbrack Z_i, V_i\rbrack$$ (i.e., the concatenation of lexical with acoustic and visual vectors, respectively).
-Two gating vectors $$g_i^v$$ and $$g_i^a$$ are produced as follows:
-
-$$
-g_i^v = R(W_{gv} \lbrack Z_i, V_i\rbrack + b_v )
-$$
-
-$$
-g_i^a = R(W_{ga} \lbrack Z_i, A_i\rbrack + b_a )
-$$
-
-where $$W_{gv}, W_{ga}$$ are weight matrices for visual and acoustic, $$b_v, b_a$$ scalar biases and $$R(\cdot)$$ is any non-linear activation function. **These gates highlight the relevant information in visual and acoustic modality conditioned on the lexical vector.**
-
-Then a non-verbal displacement vector $$H$$ is created by fusing together $$A_i$$ and $$V_i$$. multiplied by their respective gating vectors:
-
-$$
-H_i = g_i^a \cdot (W_a A_i) + g_i^v \cdot (W_v V_i) + b_H
-$$
-
-where $$W_a, W_v$$ are weight matrices for acoustic and visual information and $$b_H$$ a scalar bias vector.
-Subsequently, the multimodal vector $$\bar{Z}_i$$ is created by a weighted summation of $$Z_i$$ and its nonverbal displacement vector $$H_i$$.
-
-$$
-\bar{Z}_i = Z_i + \alpha H_i
-$$
-
-$$
-\alpha = \text{min}(\frac{||Z_i||_2}{||H_i||_2}\beta, 1)
-$$
-
-where $$\beta$$ is a hyper-parameter, $$\|Z_i\|_{2}, \|H_i\|_{2}$$ denote the $$L_{2}$$ norm of the $$Z_i$$ and $$H_i$$ vectors respectively. Finally, a layer normalization and dropout layer is applied to $$\bar{Z}_i$$.
-
-
-
-
-### Multimodal Transformer for Unaligned Multimodal Language Sequences (2020)
-* `Reference:` [Tsai et al., (2019)][Tsai et al., (2019)]
-* `Source code:` [MulT GitHub][MulT GitHub]
-
-
-Multimodal Transformer (MulT) is designed to model unaligned multi-modal language sequences. At the high-level MulT merges multi-modal time-series via a feed-forward fusion process from multiple directional pairwise **crossmodal transformers**.
-
-<figure>
-<img src="/images/mult_overall.png" alt="MulT Architecture">
-</figure>
-
-Specifically, each **crossmodal transformer** serves to repeatedly **reinforce** a *target* modality **with the low-level features** from another *source* modality by learning the attention across the two modalities' features. Differently from [Vaswani et al., (2017)][Vaswani et al., (2017)], each crossmodal attention block adapts directly from the low-feature sequence and **does not rely on self-attention** (Note: otherwise it would not be cross-modal). Authors argue that performing adaptation from low-level features benefits MulT to preserve the low-level information for each modality.
-
-A MulT architecture hence models all pairs of modalities with such crossmodal transformers, followed by sequence models (e.g., self-attention transformers) that predicts using the fused features.
-
-The core of the architecture is the **crossmodal attention module**.
-
-Let $$\alpha$$ and $$\beta$$ be two different (potentially non-aligned) modalities. Let $$X_{\alpha} \in \mathbb{R}^{T_{\alpha} \times d_{\alpha}}$$ and $$X_{\beta} \in \mathbb{R}^{T_{\beta} \times d_{\beta}}$$ (where $$T_{(\cdot)})$$ and $$d_{(\cdot)}$$ represents sequence length and feature dimension, respectively).
-
-Queries, keys and values are thus $$Q_{\alpha} = X_{\alpha}W_{Q_{\alpha}}$$, $$K_{\beta} = X_{\beta}W_{K_{\beta}}$$, and $$V_{\beta} = X_{\beta}W_{V_{\beta}}$$. The alignment (a.k.a., latent adaptation) from $$\beta$$ to $$\alpha$$ is:
-
-$$
-\displaylines{
-	Y_{\alpha} = CM_{\beta \rightarrow \alpha}(X_{\alpha}, X_{\beta}) \\
-	= \text{softmax}(\frac{Q_\alpha K_{\beta} ^ T}{2}/\sqrt{d_{k}})V_{\beta} \\
-	= \text{softmax}(\frac{X_{\alpha}W_{Q_{\alpha}} X_{\beta}^T W^T_{K_{\beta}}}{\sqrt{d_{k}}})X_{\beta}W_{V_{\beta}}
-
-}
-$$
-
-Note that $$T_{\alpha}$$ has the same length as $$Q_{\alpha}$$ (i.e., $$T_{\alpha}$$), but it meanwhile represented in the feature space of $$V_{\beta}$$. The softmax computes a score matrix $$\in \mathbb{R}^{T_{\alpha} \times {T_{\beta}}}$$, whose $$(i,j)$$-th entry is measures the attention given to by the $$i$$-th time step of modality $$\alpha$$ to the $$j$$-th time-step of modality $$\beta$$. Hence, the $$i$$-th step of modality $$Y_{\alpha}$$ is a weighted summary of $$V_{\beta}$$, with the weight determined by $$i$$-th rows in $$\text{softmax}(\cdot)$$.
-
-<figure>
-<img src="/images/mult_attention.png" alt="MulT Attention">
-</figure>
-
-**Temporal Convolutions**: to ensure that each elements of the input sequences has sufficient awareness of its neighborhood elements, the input sequence is passed through a 1D temporal convolution layer:
-
-$$
-\hat{X}_{\{L, V, A\}} = \text{Conv1D}(X_{\{L, V, A\}}, k_{\{L, V, A\}}) \in \mathbb{R}^{T_{\{L, V, A\}} \times d}
-$$
- where $$k_{\{L, V, A\}}$$ are the sizes of the convolutional kernels for each modality.
-
-Model is trained end-to-end via The **Connectionist Temporal Classification loss** (CTCLoss) [Graves et al., (2016)][Graves et al., (2016)].
-
-
-<figure>
-<img src="/images/mult_block.png" alt="MulT Block" class="center">
-</figure>
-
-
-Multimodal features are extracted as follows:
-1. Textual $$\rightarrow$$ [GloVe Word Embeddings][glove]
-2. Visual $$\rightarrow$$ [Facet][facet]
-3. Acoustic $$\rightarrow$$ [COVAREP][covarep]
-
-`TLDR:` 
-1. Multimodal features are encoded via pre-computed representations;
-2. Each input sequence is passed through a 1D (temporal) convolutional layer to ensure they have awareness of their neighborhood
-3. For each modality (ordered) pair, for each transformer layer, hidden state is processed by the crossmodal attention block where K and V are always computed from the low-level feature sequence ($$Z_{\beta}^{\lbrack 0 \rbrack})$$ in Figure below.
-4. This architecture is designed to deal with human language input (it takes input as described in point 1. Thus it does not (natively) work on images-description pairs)
-
-### VL-BERT: Pre-training of Generic Visual-Linguistic Representations (2019)
-
-*  `Reference:` [Su et al., (2019)][Su et al., (2019)]
-
-<figure>
-<img src="/images/vl_bert.png" alt="vlbert">
-</figure>
-
-VL-BERT is a unified-stream architecture. The model takes both visual and linguistics elements as inputs (RoI for images, subword piece-wise for sentences).
-Three types of inputs are involved (1) visual, (2) linguistic, and (3) special elements to disambiguate different inputs formats. For each input element, its embedding is the summation of four elements: token embeddings, visual feature embeddings, segment embeddings and sequence position embeddings.
-
-**Token Embeddings**: the linguistic input is embedded via Word-Piece embeddings with a 30.000 vocabulary. **For the visual elements, a special \[IMG\] token is assigned to each one of them**.
-
-**Visual Feature Embeddings**: For the visual element corresponding to a RoI, the representation is extracted via a **Fast** R-CNN detector (specifically, the hidden representation preceding the output layer, 2048 dimensional vector). The non-visual elements are, instead, assigned to vectors extracted from the whole input image (i.e., **Faster** R-CNN on a RoI covering the whole input image -the pixels in the masked ROI are set to zeros before applying Fast R-CNN). **How many ROIs can be fed as input?**
-
-**Segment Embeddings**: Three types, A, B, and C. Simply designed to separate different input elements. A and B for textual input (Question/Answer, or Answer/Reason etc.), C for the image.
-
-**Sequence position Embeddings**: **TODO**
-
-Model is trained on two tasks:
-1. Masked Language Modeling with Visual Clues: the task drives the network to not only model the dependencies in sentence words, but also to align the visual and linguistic content. For example in "*kitten drinking from \[MASK\]*", without the input image, the masked word could be any container.
-2. Masked RoI Classification with Linguistic Clues: to avoid any visual clue leakage from the visual feature embedding of other elements, the pixels in the masked ROI are set to zeros before applying Fast R-CNN. The category label for the masked RoI is predicted by pre-trained Faster R-CNN. For a sample drawn from the BooksCorpurs & English Wikipedia datasets, the input format *degenerates* to only text. In such a scenario, the visual feature embedding is a learnable emebedding shared for all words.
-
-
 ### ViLBERT: Pretraining Task-Agnostic Visiolinguistic Representation fro Vision-and-Language Tasks (2019)
 
-*  `Reference:` [Lu et al., (2019)][Lu et al., (2019)]
-*  `AN: the model allows for any variable number of ''vanilla'' unimodal transformers as well as any number of co-TRM (cross-attention) transformer blocks.`
+* `Reference:` [Lu et al., (2019)][Lu et al., (2019)]
+* `LAB`: Georgia Institute of Technology, Oregon State University, Facebook AI Research
+* `AN: the model allows for any variable number of ''vanilla'' unimodal transformers as well as any number of co-TRM (cross-attention) transformer blocks.`
 
 
 `To learn a joint visual-linguistic representation, we look to the recent success in self-supervised learning which have captures rich semantic and structural information from large,
@@ -402,49 +266,10 @@ ViLBERT consists of two parallel BERT-style models operating over image regions 
 2. *Multi-modal prediction*: for images, masked textual inputs is handled as in BERT. For **images**: the model is set to predict a distribution over the semantic classes for the corresponding are image. To supervise this, authors take the output distribution for the region from the same pre-trained detection model used in feature extraction. **The model is trained to minimize the KL divergence between the two distribution**.
 
 
-
-### Multi-Modality Cross-Attention Network for Image and Sentence Matching (2020)
-
-* `Reference:` [Wei et al., (2020)][Wei et al., (2020)]
-* `TASK SPECIFIC: Image-Text Retrieval`
-<figure>
-<img src="/images/mmca.png" alt="MMCA architecture" class="center">
-</figure>
-
-Multi-Modality Cross-Attention Network (MMCA) mainly consists of two modules: (1) the self-attention module and the (2) cross-attention module.
-
-**Cross-Attention Module**: it takes as input the stacked features of image regions and sentence words $$Y = \begin{bmatrix}R\\E\end{bmatrix} = \{r_1, \dots, r_k; e_1, \dots, e_n\}, Y \in \mathbb{R}^{(k+n) \times d_x}$$.
-The Query, Key and Value are computed as follows:
-
-$$
-K_Y = YW^K = \begin{bmatrix} RW^K\\EW^K\end{bmatrix} = \begin{bmatrix}  K_R\\K_E\end{bmatrix}
-$$
-
-$$
-Q_Y = YW^Q = \begin{bmatrix} RW^Q\\EW^Q\end{bmatrix} = \begin{bmatrix}  Q_R\\Q_E\end{bmatrix}
-$$
-
-$$
-V_Y = YW^V = \begin{bmatrix} RW^V\\EW^V\end{bmatrix} = \begin{bmatrix}  V_R\\V_E\end{bmatrix}
-$$
-
-
-Scaled dot-product attention is deployed as:
-
-$$
-Q_Y K_Y^Y V_Y = \begin{bmatrix} Q_R\\Q_E\end{bmatrix} \cdot \lbrack K_R^T K_E^T\rbrack \cdot \begin{bmatrix}  V_R\\V_E\end{bmatrix}
-$$
-
-$$
-= \begin{bmatrix} Q_R K_R^T V_R + Q_R K_E^T V_E\\Q_E K_E^T V_E + Q_E K_R^T V_R\end{bmatrix}
-$$
-
-which models both the inter-modality (self-attention) as well as the cross-modality (cross-attention) at the same time.
-
-
 ### Cross-Modal Self-Attention for Referring Image Segmentation (2019)
 
 * `Reference:` [Ye et al., (2019)][Ye et al., (2019)]
+* `LAB`: University of Manitoba, Canada, Shanghai University, China
 * `TASK SPECIFIC: Image Segmentation`
 
 <figure>
@@ -511,37 +336,233 @@ P = \sigma (\mathbb{C}_{3 \times 3}(\sum_{i=1}^I F_o^i))
 $$
 
 
-### Learning Transferable Visual Models From Natural Language Supervision (2021)
+### Multimodal Transformer for Unaligned Multimodal Language Sequences (2019)
+* `Reference:` [Tsai et al., (2019)][Tsai et al., (2019)]
+* `LAB`: Carnegie Mellon University (CMU)
+* `Source code:` [MulT GitHub][MulT GitHub]
 
-* `Reference:` [Radford et al., (2021)][Radford et al., (2021)]
-* `a.k.a., CLIP`
+
+Multimodal Transformer (MulT) is designed to model unaligned multi-modal language sequences. At the high-level MulT merges multi-modal time-series via a feed-forward fusion process from multiple directional pairwise **crossmodal transformers**.
+
+<figure>
+<img src="/images/mult_overall.png" alt="MulT Architecture">
+</figure>
+
+Specifically, each **crossmodal transformer** serves to repeatedly **reinforce** a *target* modality **with the low-level features** from another *source* modality by learning the attention across the two modalities' features. Differently from [Vaswani et al., (2017)][Vaswani et al., (2017)], each crossmodal attention block adapts directly from the low-feature sequence and **does not rely on self-attention** (Note: otherwise it would not be cross-modal). Authors argue that performing adaptation from low-level features benefits MulT to preserve the low-level information for each modality.
+
+A MulT architecture hence models all pairs of modalities with such crossmodal transformers, followed by sequence models (e.g., self-attention transformers) that predicts using the fused features.
+
+The core of the architecture is the **crossmodal attention module**.
+
+Let $$\alpha$$ and $$\beta$$ be two different (potentially non-aligned) modalities. Let $$X_{\alpha} \in \mathbb{R}^{T_{\alpha} \times d_{\alpha}}$$ and $$X_{\beta} \in \mathbb{R}^{T_{\beta} \times d_{\beta}}$$ (where $$T_{(\cdot)})$$ and $$d_{(\cdot)}$$ represents sequence length and feature dimension, respectively).
+
+Queries, keys and values are thus $$Q_{\alpha} = X_{\alpha}W_{Q_{\alpha}}$$, $$K_{\beta} = X_{\beta}W_{K_{\beta}}$$, and $$V_{\beta} = X_{\beta}W_{V_{\beta}}$$. The alignment (a.k.a., latent adaptation) from $$\beta$$ to $$\alpha$$ is:
+
+$$
+\displaylines{
+	Y_{\alpha} = CM_{\beta \rightarrow \alpha}(X_{\alpha}, X_{\beta}) \\
+	= \text{softmax}(\frac{Q_\alpha K_{\beta} ^ T}{2}/\sqrt{d_{k}})V_{\beta} \\
+	= \text{softmax}(\frac{X_{\alpha}W_{Q_{\alpha}} X_{\beta}^T W^T_{K_{\beta}}}{\sqrt{d_{k}}})X_{\beta}W_{V_{\beta}}
+
+}
+$$
+
+Note that $$T_{\alpha}$$ has the same length as $$Q_{\alpha}$$ (i.e., $$T_{\alpha}$$), but it meanwhile represented in the feature space of $$V_{\beta}$$. The softmax computes a score matrix $$\in \mathbb{R}^{T_{\alpha} \times {T_{\beta}}}$$, whose $$(i,j)$$-th entry is measures the attention given to by the $$i$$-th time step of modality $$\alpha$$ to the $$j$$-th time-step of modality $$\beta$$. Hence, the $$i$$-th step of modality $$Y_{\alpha}$$ is a weighted summary of $$V_{\beta}$$, with the weight determined by $$i$$-th rows in $$\text{softmax}(\cdot)$$.
+
+<figure>
+<img src="/images/mult_attention.png" alt="MulT Attention">
+</figure>
+
+**Temporal Convolutions**: to ensure that each elements of the input sequences has sufficient awareness of its neighborhood elements, the input sequence is passed through a 1D temporal convolution layer:
+
+$$
+\hat{X}_{\{L, V, A\}} = \text{Conv1D}(X_{\{L, V, A\}}, k_{\{L, V, A\}}) \in \mathbb{R}^{T_{\{L, V, A\}} \times d}
+$$
+ where $$k_{\{L, V, A\}}$$ are the sizes of the convolutional kernels for each modality.
+
+Model is trained end-to-end via The **Connectionist Temporal Classification loss** (CTCLoss) [Graves et al., (2016)][Graves et al., (2016)].
 
 
 <figure>
-<img src="/images/clip.png" alt="CLIP" class="center">
+<img src="/images/mult_block.png" alt="MulT Block" class="center">
 </figure>
 
-Simple pre-training task of predicting which captions goes with which image is an efficient and scalable way to learn high-quality image representations.
 
-At the core of CLIP is the idea of learning perception from supervision contained in natural language.
+Multimodal features are extracted as follows:
+1. Textual $$\rightarrow$$ [GloVe Word Embeddings][glove]
+2. Visual $$\rightarrow$$ [Facet][facet]
+3. Acoustic $$\rightarrow$$ [COVAREP][covarep]
 
-To predict the exact caption from an image is a (too) difficult task. Recent work in **contrastive representation learning** for images ([Zhang et al., (2020)][Zhang et al., (2020)]) can learn better representations than their equivalent predictive objective  ([Tian et al., (2019)][Tian et al., (2019)]). Other works has found that although generative models of image can learn high quality image representations, they require over an order of magnitude more compute than models with the same performance ([Chen et al. (2020)][Chen et al. (2020)]).
+`TLDR:` 
+1. Multimodal features are encoded via pre-computed representations;
+2. Each input sequence is passed through a 1D (temporal) convolutional layer to ensure they have awareness of their neighborhood
+3. For each modality (ordered) pair, for each transformer layer, hidden state is processed by the crossmodal attention block where K and V are always computed from the low-level feature sequence ($$Z_{\beta}^{\lbrack 0 \rbrack})$$ in Figure below.
+4. This architecture is designed to deal with human language input (it takes input as described in point 1. Thus it does not (natively) work on images-description pairs)
 
-Thus, training a system to solve the potentially easier proxy task of predicting only which text as a whole is paired with which image and not the exact words of that text. Given a batch of $$N$$ (image, text) pairs, CLIP is trained to predict which of the $$N \times N$$ possible (image, text) pairings across a batch actually occurred. It learns a multi-modal embedding space by jointly training an image encoder and a text encoder to maximize the cosine similarity of the image and text embeddings of the $$N$$ real pairs in the batch while minimizing the cosine similarity of the embeddings of the $$N^2 - N$$ incorrect pairings. Such a symmetric cross entropy loss was adapted for contrastive (image, text) representation learning in the domain of medical image by [Zhang et al., (2020)][Zhang et al., (2020)] (differently from them, in CLIP the image transformation function $$t_v$$ is simply as a random square crop from resized images and it is the only data augmentation used during training).
 
-Implementation details: for the image encoder they use test ResNet-50 and ResNet-D + anti-aliased rect-2 blur pooling. They replace the global average pooling layer with an attention polling mechanism. They do also test ViT (Vision Transformer [Dosovitskiy et al., (2021)][Dosovitskiy et al., (2021)]). As the text encoder, they rely on a Transformer architecture with 12 layer 512-wide with 8 attention heads, lower-cased byte pair encoding, max sequence length set at 76. As final representation,the activations of the highest layer of the transformer at the `[EOS]` token are treated as the feature representation of the text which is layer normalized and then linearly projected into the multi-modal embedding space (`AN: I do not understand whether they are using just the [EOS] token, or all of the previous tokens`).
+### VisualBERT: A Simple and Performant Baseline for Vision and Language (2019)
+
+* `Reference:` [Harold Li et al., (2019)][Harold Li et al., (2019)]
+* `LAB`: Allen AI
+* `Concurrent works: VideoBERT, ViLBERT.`
+
+<figure>
+<img src="/images/visual_bert.png" alt="VisualBERT" class="center">
+</figure>
+
+VisualBERT consists of a stack of transformer layers that implicitly align elements of an input text and regions in an associated input image with self-attention. The model is pre-trained on two visually-grounded language model objectives: **MLM** (where image tokens are never masked!) and **Sentence-Image Prediction**.
+
+The core idea of is to reuse the self-attention mechanism within the Transformer to implicitly align elements of the input text and regions in the input image. In addition to all the components of BERT, a set of visual embeddings, $$F$$, is introduced to model the image. Each $$f \in F$$ corresponds to a **bounding image, derived from an object detector**.
+
+Each embedding in $$FF$$ is computed by summing three embeddings:
+1. $$f_o$$, a visual feature representation of the bounding region of $$f$$, computed by a CNN;
+2. $$f_s$$, a segment embedding indicating it is an image embedding as opposed to a text embedding; 
+3. $$f_p$$, a position embedding.
+
+VisualBERT is pre-trained on the COCO dataset with the following objectives:
+1. Masked Language Modeling: Vectors corresponding to the image are not masked.
+2. Sentence-Image Prediction: the model is provided with a text segment containing two captions. One of the caption is describing the image, while the other has a 50% chance to be another corresponding caption (`AN: in COCO dataset, each image has 5 correct but different captions`), and a 50% change to be a randomly drawn caption. The model is trained to distinguish these two situations.
+
+
+### VL-BERT: Pre-training of Generic Visual-Linguistic Representations (2019)
+
+*  `Reference:` [Su et al., (2019)][Su et al., (2019)]
+* `LAB`: University of Science and Technology China + Microsoft Research Asia
+
+<figure>
+<img src="/images/vl_bert.png" alt="vlbert">
+</figure>
+
+VL-BERT is a unified-stream architecture. The model takes both visual and linguistics elements as inputs (RoI for images, subword piece-wise for sentences).
+Three types of inputs are involved (1) visual, (2) linguistic, and (3) special elements to disambiguate different inputs formats. For each input element, its embedding is the summation of four elements: token embeddings, visual feature embeddings, segment embeddings and sequence position embeddings.
+
+**Token Embeddings**: the linguistic input is embedded via Word-Piece embeddings with a 30.000 vocabulary. **For the visual elements, a special \[IMG\] token is assigned to each one of them**.
+
+**Visual Feature Embeddings**: For the visual element corresponding to a RoI, the representation is extracted via a **Fast** R-CNN detector (specifically, the hidden representation preceding the output layer, 2048 dimensional vector). The non-visual elements are, instead, assigned to vectors extracted from the whole input image (i.e., **Faster** R-CNN on a RoI covering the whole input image -the pixels in the masked ROI are set to zeros before applying Fast R-CNN). **How many ROIs can be fed as input?**
+
+**Segment Embeddings**: Three types, A, B, and C. Simply designed to separate different input elements. A and B for textual input (Question/Answer, or Answer/Reason etc.), C for the image.
+
+**Sequence position Embeddings**: **TODO**
+
+Model is trained on two tasks:
+1. Masked Language Modeling with Visual Clues: the task drives the network to not only model the dependencies in sentence words, but also to align the visual and linguistic content. For example in "*kitten drinking from \[MASK\]*", without the input image, the masked word could be any container.
+2. Masked RoI Classification with Linguistic Clues: to avoid any visual clue leakage from the visual feature embedding of other elements, the pixels in the masked ROI are set to zeros before applying Fast R-CNN. The category label for the masked RoI is predicted by pre-trained Faster R-CNN. For a sample drawn from the BooksCorpurs & English Wikipedia datasets, the input format *degenerates* to only text. In such a scenario, the visual feature embedding is a learnable emebedding shared for all words.
+
+
+### LXMERT: Learning Cross-Modality Encoder Representations from Transformers (2019)
+
+* `Reference:` [Tan et al., (2019)][Tan et al., (2019)]
+* `LAB`: University of North Carolina (UNC)
+* `Concurrent works: VideoBERT, ViLBERT.`
+
+<figure>
+<img src="/images/lxmert.png" alt="LXMERT" class="center">
+</figure>
+
+LXMERT consists of three Transformer encoders:
+1. Object relationship encoder;
+2. Language encoder;
+3. Cross-modality encoder.
+
+In order to better learn cross-modal alignments between vision and language, the model is pre-trained with five different objectives:
+1. Masked Cross-Modality Language Model;
+2. Masked Object Prediction via ROI-feature regression;
+3. Masked Object Prediction via detected-label classification;
+4. Cross-Modality Matching;
+5. Image Question Answering.
+
+
+**Model Architecture**: the model takes two inputs, an image and its related sentence. Each image is represented as sequence of objects, and each sentence is represented as a sequence of words. 
+1. Word-Level Sentence Embeddings: WordPiece tokenizer and positional encoding.
+2. Object-Level Image Embeddings: they follow [Bottom-Up and Top-Down Attention (Anderson et al., (2018))][Anderson et al., (2018)]: instead of using the feature map of a CNN, they take the features detected by an object detector backbone. They learn a position-aware embedding via 2 fully connected layers.
+
+The three encoders revolve around self (unimodal) and cross-attention (crossmodal):
+1. Single Modality Encoders: the **Language encoder** and the **Object-relationship encoder**. Each layer contains a self-attention module and a 2 feed-forward layer. There are residual connection and layer normalization in each layer.
+2. Cross-Modality Encoders: each Cross-Modality Encoder layer consists of two self-attention sub-layers, one bi-directional cross-attention sub-layer and two feed forward sub-layers. The bi-direction cross-attention contains two unidirectional cross-attention modules: one from language to vision, and one from vision to language. The query and the context vectors are the outputs of the $$(k-1)$$-th layer. The cross-attention sub-layer is followed by the self-attention modules and the outputs are produced by FF networks. Residual connection and layer normalization are applied at each layer level.
+
+
+### Unicoder-VL: A Universal Encoder for Vision and Language by Cross-modal Pre-training (2019)
+
+* `Reference:` [Li et al., (2019)][Li et al., (2019)]
+* `LAB`: Microsoft Beijing
+* `AN: starting idea/architecture of OSCAR`
+
+<figure>
+<img src="/images/unicoder_vl.png" alt="UNICODER-VL" class="center">
+</figure>
+
+Unicoder-VL takes the visual regions of the image and textual tokens of the sentence as the input and then encode the input to the linguistic embedding and image embedding.
+
+**Linguistic Embedding**: It follows the pre-processing of BERT. Each sentences is tokenized via WordPiece algorithm. They add the usual tokens `[CLS], [SEP]` and add a special `[IMG]` token to denote the visual input.
+
+**Image Embedding**: a Faster R-CNN is used to extract the visual features (pooled ROI features) for each image region. THe encode the location features in a 5-D vector. Image features and position are fused together by means of a FC layer. They keep the predicted label of each detected object. These predictions will be successively used in the object label prediction task.
+
+**Pre-Training Tasks**:
+1. **Masked Language Modeling (MLM)**
+
+	$$
+	\mathcal{L}_{\text{MLM}} = -\mathbb{E}_{(w,v) \sim \mathcal{D}} \log{P_{\theta}(w_m|w_{\setminus m}, v)}
+	$$
+
+2. **Masked Object Classification (MOC)**: Sample image regions and mask the visual features with probability of 15%. Replace the object feature vector with a zero-initialized vector $$v_m$$ 90% of the time, and keep the object feature unchanged in the remaining 10%. As target: take the object detected by the Fast R-CNN with the highest confidence score $$c(v_m^{(i)}).
+
+	$$
+	\mathcal{L}_{\text{MOC}} = -\mathbb{E}_{(w,v) \sim \mathcal{D}} \sum_{i=1}^{M}\text{CE}(c(v_m^{(i)}), g_{\theta}(v_m^{(i)}))
+	$$
+
+3. **Visual-linguistic Matching (VLM)**: Instance-level alignment (rather than token/region-level) between the whole image and the sentence via VLM. Final hidden state of `[CLS]` to predict whether the linguistic sentence is semantically matched with the visual content. During training, both negative and positive image-sentence pairs are sampled.
+
+	$$
+	\mathcal{L}_{\text{VLM}} = -\mathbb{E}_{(w,v) \sim \mathcal{D}} \lbrack y \log{s_{\theta}(w,v) + (1-y)\log{(1-s_{\theta}(w,v))\rbrack}}
+	$$
+
+Overall, the **final training loss** is the sum of the three previous losses:
 
 $$
-\mathcal{L} = \frac{1}{N} \sum_{i=1}^{N}(\lambda l_i^{(v \rightarrow u)} + (1-\lambda)l_i^{(u \rightarrow v)})
+\mathcal{L} = (\mathcal{L}_{\text{MLM}} + \mathcal{L}_{\text{MOC}}) \cdot I[y=1] + \mathcal{L}_{\text{VLM}}
+$$
+
+where $$I[y = 1]$$ is and indicator function for the label 1 being correct for the image-caption pair.
+
+
+### Multi-Modality Cross-Attention Network for Image and Sentence Matching (2020)
+
+* `Reference:` [Wei et al., (2020)][Wei et al., (2020)]
+* `LAB`: University of Science and Technology of China
+* `TASK SPECIFIC: Image-Text Retrieval`
+<figure>
+<img src="/images/mmca.png" alt="MMCA architecture" class="center">
+</figure>
+
+Multi-Modality Cross-Attention Network (MMCA) mainly consists of two modules: (1) the self-attention module and the (2) cross-attention module.
+
+**Cross-Attention Module**: it takes as input the stacked features of image regions and sentence words $$Y = \begin{bmatrix}R\\E\end{bmatrix} = \{r_1, \dots, r_k; e_1, \dots, e_n\}, Y \in \mathbb{R}^{(k+n) \times d_x}$$.
+The Query, Key and Value are computed as follows:
+
+$$
+K_Y = YW^K = \begin{bmatrix} RW^K\\EW^K\end{bmatrix} = \begin{bmatrix}  K_R\\K_E\end{bmatrix}
 $$
 
 $$
-l_i^{(v \rightarrow u)} = -\log \frac{\exp{(\langle \mathbf{v}_i, \mathbf{u}_i \rangle / \tau)}}{\sum_{k=1}^N \exp{(\langle \mathbf{v}_i, \mathbf{u}_k \rangle / \tau)}}
+Q_Y = YW^Q = \begin{bmatrix} RW^Q\\EW^Q\end{bmatrix} = \begin{bmatrix}  Q_R\\Q_E\end{bmatrix}
 $$
 
-with a batch size $$N$$ of 32.768 (image, text) pairs.
+$$
+V_Y = YW^V = \begin{bmatrix} RW^V\\EW^V\end{bmatrix} = \begin{bmatrix}  V_R\\V_E\end{bmatrix}
+$$
 
-**NB:** both the encoder are trained from scratch since they (openai) have a ton of training data and compute power.
+
+Scaled dot-product attention is deployed as:
+
+$$
+Q_Y K_Y^Y V_Y = \begin{bmatrix} Q_R\\Q_E\end{bmatrix} \cdot \lbrack K_R^T K_E^T\rbrack \cdot \begin{bmatrix}  V_R\\V_E\end{bmatrix}
+$$
+
+$$
+= \begin{bmatrix} Q_R K_R^T V_R + Q_R K_E^T V_E\\Q_E K_E^T V_E + Q_E K_R^T V_R\end{bmatrix}
+$$
+
+which models both the inter-modality (self-attention) as well as the cross-modality (cross-attention) at the same time.
 
 
 ### Oscar: Object-Semantics Aligned Pre-training for Vision-Language Tasks (2020)
@@ -590,63 +611,11 @@ $$
 
 * `The sequence length of discrete tokens `$$h$$` and region features `$$v$$` are 35 and 50, respectively.`
 
-### VinVL: Revisiting Visual Representations in Vision-Language Models (2021)
-
-* `Reference:` [Zhang et al., (2021)][Zhang et al., (2021)]
-* `a.k.a., OSCAR+`
-* `While most VLP research focuses on improving the cross-modal fusion model, this paper focuses on improving the object-centric visual representations (i.e., enhance the object-detector (OD model). As depicted in the image below, the X152-C4 model (right), which is trained on four public dataset merged together, is able to capture much richer semantics, visual concepts and attribute information in comparison to the X152-FPN model (left).`
-
-<figure>
-<img src="/images/vinvl.png" alt="vinvl" class="center">
-</figure>
-
-VPL typically consists of two stages: (1) an object detection (OD) model is pre-trained to encode an image and the visual objects in the image to feature vectors; (2) a cross-modal fusion model is pre-trained to blend text and visual features. The OD model (1) provides an object-centric representation of images, and has been used in many VL models as a black-box.
-
-In this paper, authors pre-train a OD model (X152-C4) on a four dataset (VG, COCO, Objects365, and OpenImagesV5) merged together. Dataset are balanced across classes and dataset sizes. Target are merged together if the class names or aliases match, otherwise they are added as a new class if no match is found.
-
-Furthermore, they propose a variant of the [OSCAR][Li et al., (2020)] training loss to effectively optimize for VQA and text-image matching tasks. They construct two types of negative (unmatched) triples: the polluted caption $$w'$$ and the polluted answer $$q'$$. To classify whether a caption-tags-image triples contains a polluted caption is a text-image matching task. To classify whether a question-answer-image triplet contains a polluted answer is an answer selection task for VQA. They apply a FC layer on top of the transformer as a 3-way classifier to predict wheter the triples is matched ($$c=0$$), contains a polluted $$q'$$ ($$c=1$$), or contains a polluted $$w'$$ ($$c=2$$).
-They modify the second terms of the original training loss as:
-
-$$
-\mathcal{L}_{\text{pretraining}} = \mathcal{L}_{\text{MTL}} + \mathcal{L}_{\text{CL3}}
-$$
-
-$$
-\mathcal{L}_{\text{CL3}} = -\mathbb{E}_{(\mathbf{w,q,v;c}) \sim \mathcal{\tilde{D}}} \log{p(c|f(\mathbf{w,q,v}))}
-$$
-
-where the dataset $$(\mathbf{w,q,v;c}) \sim \mathcal{\tilde{D}}$$ contains 50% matched triplets, 25% $$w$$-polluted triples and 25% $$q$$-polluted triples.
-
-
-### VirTex: Learning Visual Representations from Textual Annotations (2020)
-
-* `Reference:` [Desai et al., (2020)][Desai et al., (2020)]
-* `Source Code:` [GitHub VirTex][GitHub Virtex]
-
-<figure>
-<img src="/images/virtex.png" alt="virtex" class="center">
-</figure>
-
-Contrary to [CLIP][Radford et al., (2021)], they focus on **generative** natural language supervision via image captioning task. Captions carry rich semantic information about images, including the presence of objects, attributes of objects, spatial arrangement and actions performed. They train image captioning models to predict captions from image.
-The model has two components: (1) a **visual backbone** which extracts visual features from the image input, and (2) a **textual head** that accepts the features extracted by the visual components and predicts a caption token by token. The textual head performs bi-direction captioning (bicaptioning): it comprises of a forward and a backward model. All model components are jointly trained to maximize the log-likelihood of the correct caption.
-After training they discard the textual head and transfer the visual backbone to the downstream tasks.
-
-**Language Modeling**: They also perform experiment with MLM. However, they observe that MLM training converges more slowly than directional models. Furthermore, they note point out that MLMs have poor sample efficiency since they only predict a subset of tokens for each caption, whereas the generative directional predicts all of them.
-
-**Visual Backbone**: is a convolutional NN, specifically ResNet-50.
-
-**Textual Head**: two identical Transformer, in forward and backward setting. During training the model receives two inputs: image features from the visual backbone, and a caption describing the image. It is trained to predict token-by-token starting with $$c_0$$. The prediction process is causal since it depends on the previous outputs. First, they convert the tokens of the caption $$C$$ to vectors via learned token and positional embeddings, followed by element-wise sum, layer norm and dropout.
-
-Each layer performs masked multi-head self-attention over token vectors, multi-head (cross) attention between token vectors (query) and image vectors (key-values), and applies a two-layer FC to each vector. These operations are each followed by dropout, wrapped in residual connection, and followed by layer norm. After the last transformer block, they apply a linear layer to each vector to predict un-normalized log-probability over the token vocabulary.
-
-Forward and backward model consists of independent transformer layers. However, they share the same token embedding matrix which is also reused at the output layers of each model.
-
-**Tokenization**: Sentence-Piece using BPE algorithm. Lowecase and strip accents. Vocabulary of 10k tokens. They restrict subword merges between letters and punctuation to prevent redundant tokens such as `dog?` and `dog!`.
-
 
 ### UNITER: UNiversal Image-TExt Representation Learning (2020)
 
 * `Reference:` [Chen et al., (2020)][Chen et al., (2020)]
+* `LAB`: Microsoft Dynamics 365 AI Research
 * `WRA (Word-Region Alignment) via Optimal Transport (OT). OT-based learning aims to optimize for distribution matching via minimizing the cost of transporting one distribution to another. @Fabrizio - any trick for distribution shift that could be applied here?` 
 
 <figure>
@@ -684,125 +653,6 @@ UNITER is pre-trained through **four different tasks**:
 
 * **TODO**
 
-### Unicoder-VL: A Universal Encoder for Vision and Language by Cross-modal Pre-training (2019)
-
-* `Reference:` [Li et al., (2019)][Li et al., (2019)]
-* `AN: starting idea/architecture of OSCAR`
-
-<figure>
-<img src="/images/unicoder_vl.png" alt="UNICODER-VL" class="center">
-</figure>
-
-Unicoder-VL takes the visual regions of the image and textual tokens of the sentence as the input and then encode the input to the linguistic embedding and image embedding.
-
-**Linguistic Embedding**: It follows the pre-processing of BERT. Each sentences is tokenized via WordPiece algorithm. They add the usual tokens `[CLS], [SEP]` and add a special `[IMG]` token to denote the visual input.
-
-**Image Embedding**: a Faster R-CNN is used to extract the visual features (pooled ROI features) for each image region. THe encode the location features in a 5-D vector. Image features and position are fused together by means of a FC layer. They keep the predicted label of each detected object. These predictions will be successively used in the object label prediction task.
-
-**Pre-Training Tasks**:
-1. **Masked Language Modeling (MLM)**
-
-	$$
-	\mathcal{L}_{\text{MLM}} = -\mathbb{E}_{(w,v) \sim \mathcal{D}} \log{P_{\theta}(w_m|w_{\setminus m}, v)}
-	$$
-
-2. **Masked Object Classification (MOC)**: Sample image regions and mask the visual features with probability of 15%. Replace the object feature vector with a zero-initialized vector $$v_m$$ 90% of the time, and keep the object feature unchanged in the remaining 10%. As target: take the object detected by the Fast R-CNN with the highest confidence score $$c(v_m^{(i)}).
-
-	$$
-	\mathcal{L}_{\text{MOC}} = -\mathbb{E}_{(w,v) \sim \mathcal{D}} \sum_{i=1}^{M}\text{CE}(c(v_m^{(i)}), g_{\theta}(v_m^{(i)}))
-	$$
-
-3. **Visual-linguistic Matching (VLM)**: Instance-level alignment (rather than token/region-level) between the whole image and the sentence via VLM. Final hidden state of `[CLS]` to predict whether the linguistic sentence is semantically matched with the visual content. During training, both negative and positive image-sentence pairs are sampled.
-
-	$$
-	\mathcal{L}_{\text{VLM}} = -\mathbb{E}_{(w,v) \sim \mathcal{D}} \lbrack y \log{s_{\theta}(w,v) + (1-y)\log{(1-s_{\theta}(w,v))\rbrack}}
-	$$
-
-Overall, the **final training loss** is the sum of the three previous losses:
-
-$$
-\mathcal{L} = (\mathcal{L}_{\text{MLM}} + \mathcal{L}_{\text{MOC}}) \cdot I[y=1] + \mathcal{L}_{\text{VLM}}
-$$
-
-where $$I[y = 1]$$ is and indicator function for the label 1 being correct for the image-caption pair.
-
-### VisualBERT: A Simple and Performant Baseline for Vision and Language (2019)
-
-* `Reference:` [Harold Li et al., (2019)][Harold Li et al., (2019)]
-* `Concurrent works: VideoBERT, ViLBERT.`
-
-<figure>
-<img src="/images/visual_bert.png" alt="VisualBERT" class="center">
-</figure>
-
-VisualBERT consists of a stack of transformer layers that implicitly align elements of an input text and regions in an associated input image with self-attention. The model is pre-trained on two visually-grounded language model objectives: **MLM** (where image tokens are never masked!) and **Sentence-Image Prediction**.
-
-The core idea of is to reuse the self-attention mechanism within the Transformer to implicitly align elements of the input text and regions in the input image. In addition to all the components of BERT, a set of visual embeddings, $$F$$, is introduced to model the image. Each $$f \in F$$ corresponds to a **bounding image, derived from an object detector**.
-
-Each embedding in $$FF$$ is computed by summing three embeddings:
-1. $$f_o$$, a visual feature representation of the bounding region of $$f$$, computed by a CNN;
-2. $$f_s$$, a segment embedding indicating it is an image embedding as opposed to a text embedding; 
-3. $$f_p$$, a position embedding.
-
-VisualBERT is pre-trained on the COCO dataset with the following objectives:
-1. Masked Language Modeling: Vectors corresponding to the image are not masked.
-2. Sentence-Image Prediction: the model is provided with a text segment containing two captions. One of the caption is describing the image, while the other has a 50% chance to be another corresponding caption (`AN: in COCO dataset, each image has 5 correct but different captions`), and a 50% change to be a randomly drawn caption. The model is trained to distinguish these two situations.
-
-
-### LXMERT: Learning Cross-Modality Encoder Representations from Transformers (2019)
-
-* `Reference:` [Tan et al., (2019)][Tan et al., (2019)]
-* `Concurrent works: VideoBERT, ViLBERT.`
-
-<figure>
-<img src="/images/lxmert.png" alt="LXMERT" class="center">
-</figure>
-
-LXMERT consists of three Transformer encoders:
-1. Object relationship encoder;
-2. Language encoder;
-3. Cross-modality encoder.
-
-In order to better learn cross-modal alignments between vision and language, the model is pre-trained with five different objectives:
-1. Masked Cross-Modality Language Model;
-2. Masked Object Prediction via ROI-feature regression;
-3. Masked Object Prediction via detected-label classification;
-4. Cross-Modality Matching;
-5. Image Question Answering.
-
-
-**Model Architecture**: the model takes two inputs, an image and its related sentence. Each image is represented as sequence of objects, and each sentence is represented as a sequence of words. 
-1. Word-Level Sentence Embeddings: WordPiece tokenizer and positional encoding.
-2. Object-Level Image Embeddings: they follow [Bottom-Up and Top-Down Attention (Anderson et al., (2018))][Anderson et al., (2018)]: instead of using the feature map of a CNN, they take the features detected by an object detector backbone. They learn a position-aware embedding via 2 fully connected layers.
-
-The three encoders revolve around self (unimodal) and cross-attention (crossmodal):
-1. Single Modality Encoders: the **Language encoder** and the **Object-relationship encoder**. Each layer contains a self-attention module and a 2 feed-forward layer. There are residual connection and layer normalization in each layer.
-2. Cross-Modality Encoders: each Cross-Modality Encoder layer consists of two self-attention sub-layers, one bi-directional cross-attention sub-layer and two feed forward sub-layers. The bi-direction cross-attention contains two unidirectional cross-attention modules: one from language to vision, and one from vision to language. The query and the context vectors are the outputs of the $$(k-1)$$-th layer. The cross-attention sub-layer is followed by the self-attention modules and the outputs are produced by FF networks. Residual connection and layer normalization are applied at each layer level.
-
-
-### SimVLM: Simple Visual Language Model Pretraining with Weak Supervision (2021)
-
-* `Reference:` [Wang et al., (2021)][Wang et al., (2021)]
-* `AN: SimVLM is trained on 1.000.000.000+ data! (MSCOCO: 330.000, Conceptual Caps: 3.300.000, CLIP Dataset: 400.000.000)` [Jia et al., (2021)][Jia et al., (2021)]
-* `Blogpost`: [Blogpost](https://ai.googleblog.com/2021/10/simvlm-simple-visual-language-model-pre.html)
-
-<figure>
-<img src="/images/simvlm.png" alt="SimVLM" class="center">
-</figure>
-
-It follows a *minimalist approach* that takes raw images as inputs and make use of only the language modeling loss, without resorting to auxiliary models (like Fast R-CNN for image detection).
-
-They propose a new objective function: **Prefix Language Modeling (PrefixLM)**. It enables bi-directional attention on the prefix sequence (e.g., $$x_{< T p}$$), and only conducts auto-regressive factorization on the remaining tokens ($$x_{\geq T_p}$$). During pre-training, a prefix sequence of tokens of length $$T_p$$ is truncated from input sequence and the training objective becomes:
-
-$$
-\mathcal{L}_{\text{PrefixLM}} = -\mathbb{E}_{x \sim \mathcal{D}} \lbrack \log{P_{\theta}(x_{\geq T_p}|x_{< T_p})}\rbrack = -\mathbb{E}_{x \sim \mathcal{D}} \lbrack \sum_{t=T_p}^{T} P_{\theta}(x_t|x_{\lbrack T_p, t \rbrack}, x_{< T_p}) \rbrack
-$$
-
-Images can be considered as prefix for their textual descriptions as they often appear before text in a web document. Therefore, for a given image-text pair, we prepend image feature sequence of length $$T_i$$ to the text sequence, and enforce the model to sample a prefix of length $$T_p \leq T_i$$ to calculate LM loss on text data only. PrefixLM model under the sequence-to-sequence framework not only enjoys the bidirectional contextualized representation an in MLM, but also can perform text generation similar to LM.
-
-**Architecture**: PrefixLM enabled bidirectional attention within the prefix sequence, and thus it is applicable for both decoder-only and encoder-decoder sequence-to-sequence language models.
-
-
 ### Villa: Large-Scale Adversarial Training for Vision-and-Language Representation Learning (2020) 
 
 * `Reference:` [Gan et al.,(2020)][Gan et al.,(2020)]
@@ -830,6 +680,137 @@ $$
 \max_{||\delta_{\text{txt}}|| \leq \epsilon} L_{\text{kl}}(f_{\theta}(x_{\text{img}}, x_{\text{txt}} + \delta_{\text{txt}}), f_{\theta}(x_{\text{img}}, x_{\text{txt}}))
 $$
 
+
+### MAG-BERT: Integrating Multimodal Information in Large Pretrained Transformers (2020)
+
+*  `Reference:` [Rahman et al., (2020)][Rahman et al., (2019)]
+* `LAB`: Carnegie Mellon University (CMU)
+
+Multimodal Adaptation Gate (MAG) is a module designed to be attached to pre-trained models such as BERT and XLNet. MAG accommodate for multimodal non-verbal finetuning. It does so by generating a shift (by means of a displacement vector) to internal distribution of the pre-trained model. Such a shift is conditioned on visual and acoustic modalities.
+
+In absence of multimodal accompaniments, each word falls withing some part of a semantic space, depending only on the meaning of the word in a linguistic structure (i.e., a sentence). Nonverbal behavior can have an impact on the meaning of words, and therefore on the position of words in this semantic space. Together language and nonverbal accompaniments decide on the new position of the word in the semantic space. This is achieved by means of a displacement vector (i.e., a vector with a trajectory and magnitude that shifts the language-only position).
+
+<figure>
+<img src="/images/mag.png" alt="MAG" class="center" width="50%">
+</figure>
+
+
+MAG units receives three inputs, one is purely lexical, one is visual and one is acoustic. Let the triplet $$(Z_i, A_i, V_i)$$ denote these inputs for the $$i$$-th word in a sequence. The displacement vector is factorized into bimodal components $$\lbrack Z_i;A_i\rbrack$$ and $$\lbrack Z_i, V_i\rbrack$$ (i.e., the concatenation of lexical with acoustic and visual vectors, respectively).
+Two gating vectors $$g_i^v$$ and $$g_i^a$$ are produced as follows:
+
+$$
+g_i^v = R(W_{gv} \lbrack Z_i, V_i\rbrack + b_v )
+$$
+
+$$
+g_i^a = R(W_{ga} \lbrack Z_i, A_i\rbrack + b_a )
+$$
+
+where $$W_{gv}, W_{ga}$$ are weight matrices for visual and acoustic, $$b_v, b_a$$ scalar biases and $$R(\cdot)$$ is any non-linear activation function. **These gates highlight the relevant information in visual and acoustic modality conditioned on the lexical vector.**
+
+Then a non-verbal displacement vector $$H$$ is created by fusing together $$A_i$$ and $$V_i$$. multiplied by their respective gating vectors:
+
+$$
+H_i = g_i^a \cdot (W_a A_i) + g_i^v \cdot (W_v V_i) + b_H
+$$
+
+where $$W_a, W_v$$ are weight matrices for acoustic and visual information and $$b_H$$ a scalar bias vector.
+Subsequently, the multimodal vector $$\bar{Z}_i$$ is created by a weighted summation of $$Z_i$$ and its nonverbal displacement vector $$H_i$$.
+
+$$
+\bar{Z}_i = Z_i + \alpha H_i
+$$
+
+$$
+\alpha = \text{min}(\frac{||Z_i||_2}{||H_i||_2}\beta, 1)
+$$
+
+where $$\beta$$ is a hyper-parameter, $$\|Z_i\|_{2}, \|H_i\|_{2}$$ denote the $$L_{2}$$ norm of the $$Z_i$$ and $$H_i$$ vectors respectively. Finally, a layer normalization and dropout layer is applied to $$\bar{Z}_i$$.
+
+
+
+### Learning Transferable Visual Models From Natural Language Supervision (2021)
+
+* `Reference:` [Radford et al., (2021)][Radford et al., (2021)]
+* `a.k.a., CLIP`
+
+
+<figure>
+<img src="/images/clip.png" alt="CLIP" class="center">
+</figure>
+
+Simple pre-training task of predicting which captions goes with which image is an efficient and scalable way to learn high-quality image representations.
+
+At the core of CLIP is the idea of learning perception from supervision contained in natural language.
+
+To predict the exact caption from an image is a (too) difficult task. Recent work in **contrastive representation learning** for images ([Zhang et al., (2020)][Zhang et al., (2020)]) can learn better representations than their equivalent predictive objective  ([Tian et al., (2019)][Tian et al., (2019)]). Other works has found that although generative models of image can learn high quality image representations, they require over an order of magnitude more compute than models with the same performance ([Chen et al. (2020)][Chen et al. (2020)]).
+
+Thus, training a system to solve the potentially easier proxy task of predicting only which text as a whole is paired with which image and not the exact words of that text. Given a batch of $$N$$ (image, text) pairs, CLIP is trained to predict which of the $$N \times N$$ possible (image, text) pairings across a batch actually occurred. It learns a multi-modal embedding space by jointly training an image encoder and a text encoder to maximize the cosine similarity of the image and text embeddings of the $$N$$ real pairs in the batch while minimizing the cosine similarity of the embeddings of the $$N^2 - N$$ incorrect pairings. Such a symmetric cross entropy loss was adapted for contrastive (image, text) representation learning in the domain of medical image by [Zhang et al., (2020)][Zhang et al., (2020)] (differently from them, in CLIP the image transformation function $$t_v$$ is simply as a random square crop from resized images and it is the only data augmentation used during training).
+
+Implementation details: for the image encoder they use test ResNet-50 and ResNet-D + anti-aliased rect-2 blur pooling. They replace the global average pooling layer with an attention polling mechanism. They do also test ViT (Vision Transformer [Dosovitskiy et al., (2021)][Dosovitskiy et al., (2021)]). As the text encoder, they rely on a Transformer architecture with 12 layer 512-wide with 8 attention heads, lower-cased byte pair encoding, max sequence length set at 76. As final representation,the activations of the highest layer of the transformer at the `[EOS]` token are treated as the feature representation of the text which is layer normalized and then linearly projected into the multi-modal embedding space (`AN: I do not understand whether they are using just the [EOS] token, or all of the previous tokens`).
+
+$$
+\mathcal{L} = \frac{1}{N} \sum_{i=1}^{N}(\lambda l_i^{(v \rightarrow u)} + (1-\lambda)l_i^{(u \rightarrow v)})
+$$
+
+$$
+l_i^{(v \rightarrow u)} = -\log \frac{\exp{(\langle \mathbf{v}_i, \mathbf{u}_i \rangle / \tau)}}{\sum_{k=1}^N \exp{(\langle \mathbf{v}_i, \mathbf{u}_k \rangle / \tau)}}
+$$
+
+with a batch size $$N$$ of 32.768 (image, text) pairs.
+
+**NB:** both the encoder are trained from scratch since they (openai) have a ton of training data and compute power.
+
+
+### VIVO: Visual Vocabulary Pre-Training for Novel Object Captioning (2021)
+
+* `Reference:` [Hu et al.,(2021)][Hu et al.,(2021)]
+* `LAB`: Microsoft
+* `Weakly Supervised Pre-training for NOCAP (caption of novel objects, unseen in caption caption-labeled training data). They decouple the training paradigm image-caption by further proxying it with image-tag data.` 
+* `AN: thus, unseen in caption-labeled data but seen during pre-training, still without the attached caption.`
+
+
+<figure>
+<img src="/images/vivo.png" alt="VIVO" class="center">
+</figure>
+
+A 2-stage weakly supervised learning approach to pre-train image captioning models on **image-tag** pairs that, compared to image-caption ones, are or larger amounts and **contain many more diverse visual objects**.
+First an image captioning model learns to label image regions using image-tags pairs from datasets such as OpenImages, ImageNet, Objects365, etc. Then - in fine-tuning - the given image-caption pairs and their corresponding object tags detected, the model learns to map an image to a sentence conditioned on the detected objects.
+
+While the sentences are learned from image-caption pairs, the object tags may refer to novel visual objects that are unseen in image-caption pairs. The model "achieves the compositionality generalization, allowing for zero-shot generalization to novel objects for image captioning".
+
+They leverage `Hungarian Matching Loss` to formulate the tag prediction as a set-matching problem.
+
+
+### VinVL: Revisiting Visual Representations in Vision-Language Models (2021)
+
+* `Reference:` [Zhang et al., (2021)][Zhang et al., (2021)]
+* `LAB`: Microsoft Research
+* `a.k.a., OSCAR+`
+* `While most VLP research focuses on improving the cross-modal fusion model, this paper focuses on improving the object-centric visual representations (i.e., enhance the object-detector (OD model). As depicted in the image below, the X152-C4 model (right), which is trained on four public dataset merged together, is able to capture much richer semantics, visual concepts and attribute information in comparison to the X152-FPN model (left).`
+
+<figure>
+<img src="/images/vinvl.png" alt="vinvl" class="center">
+</figure>
+
+VPL typically consists of two stages: (1) an object detection (OD) model is pre-trained to encode an image and the visual objects in the image to feature vectors; (2) a cross-modal fusion model is pre-trained to blend text and visual features. The OD model (1) provides an object-centric representation of images, and has been used in many VL models as a black-box.
+
+In this paper, authors pre-train a OD model (X152-C4) on a four dataset (VG, COCO, Objects365, and OpenImagesV5) merged together. Dataset are balanced across classes and dataset sizes. Target are merged together if the class names or aliases match, otherwise they are added as a new class if no match is found.
+
+Furthermore, they propose a variant of the [OSCAR][Li et al., (2020)] training loss to effectively optimize for VQA and text-image matching tasks. They construct two types of negative (unmatched) triples: the polluted caption $$w'$$ and the polluted answer $$q'$$. To classify whether a caption-tags-image triples contains a polluted caption is a text-image matching task. To classify whether a question-answer-image triplet contains a polluted answer is an answer selection task for VQA. They apply a FC layer on top of the transformer as a 3-way classifier to predict wheter the triples is matched ($$c=0$$), contains a polluted $$q'$$ ($$c=1$$), or contains a polluted $$w'$$ ($$c=2$$).
+They modify the second terms of the original training loss as:
+
+$$
+\mathcal{L}_{\text{pretraining}} = \mathcal{L}_{\text{MTL}} + \mathcal{L}_{\text{CL3}}
+$$
+
+$$
+\mathcal{L}_{\text{CL3}} = -\mathbb{E}_{(\mathbf{w,q,v;c}) \sim \mathcal{\tilde{D}}} \log{p(c|f(\mathbf{w,q,v}))}
+$$
+
+where the dataset $$(\mathbf{w,q,v;c}) \sim \mathcal{\tilde{D}}$$ contains 50% matched triplets, 25% $$w$$-polluted triples and 25% $$q$$-polluted triples.
+
+
 ### ERNIE-ViL: Knowledge Enhanced Vision-Language Representations Through Scene Graph (2021)
 
 * `Reference:` [Yu et al.,(2021)][Yu et al.,(2021)]
@@ -842,6 +823,7 @@ $$
 
 **Scene Graph Parsing**: The text sequence $$w$$$ is parsed into a **scene graph** `(AN: what is the difference between a Dependency Parsing Tree?)`, denoted as $$G(\textbf{w}) = < O(\textbf{w}), E(\textbf{w}), K(\textbf{w})>$$, where $$O(\textbf{w})$$ is the set of objects mentioned in the image, $$E(\textbf{w}) \subseteq O(\textbf{w}) \times R(\textbf{w}) \times O(\textbf{w})$$ is the set of hyper-edges (`AN: An edge in a hypergraph, having any number of endpoints, in contrast to the requirement that edges of graphs have exactly two endpoints.`) representing relationship triplets, and $$R(\textbf{w})$$ is the set of relationship nodes between object. $$k(\textbf{w}) \subseteq O(\textbf{w}) \times A(\textbf{w})$$ is the set of attribute pairs, where $$A(\textbf{w})$$ is he set of attribute nodes associated with object nodes.
 * Scene Graph Parser used in the paper: [SPICE: Semantic Propositional Image Caption Evaluation (Anderson et al., (2016))][Anderson et al., (2016)]. `(Haven't read this yet: however, from the slides, it leverages dependency parsing in order to construct the scene graph).`
+
 
 ### UNIMO: Towards Unified-Modal Understanding and Generation via Cross-Modal Contrastive Learning (2021)
 
@@ -875,58 +857,98 @@ Similarly, for an image-pair $$(V, W)$$, the model is trained to reconstruct the
 1. **bidirectional prediction**: The goal is to predict the masked tokens based on their surrounding context, by minimizing the negative log-likelihood.
 2. **Seq2Swq generation**: Fragments are sampled from the captions. All selected fragments are removed from the text and concatenated as target sequence while the remaining parts are concatenated as the source sequence. The model is trained to generate the target sequence auto-regressively
 
-### VIVO: Visual Vocabulary Pre-Training for Novel Object Captioning (2021)
 
-* `Reference:` [Hu et al.,(2021)][Hu et al.,(2021)]
-* `TODO`
 
-### VL-T5: Unifying Vision-and-Language Tasks via Text Generation (2021)
+### VL-T5 / VL-BART: Unifying Vision-and-Language Tasks via Text Generation (2021)
 
 * `Reference:` [Cho et al.,(2021)][Cho et al.,(2021)]
-* `LAB`: Microsoft
-
-
-### Seeing Out of tHe bOx: End-to-End Pre-training for Vision-Language Representation Learning (2021)
-
-* `Reference:` 
-* `TODO`
-
-### E2E-VLP: End-to-End Vision-Language Pre-training Enhanced by Visual Learning (2021)
-
-* `Reference:` 
-* `TODO`
-
-
-### An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale (2021)
-
-* `Reference:` [Dosovitskiy et al., (2021)][Dosovitskiy et al., (2021)]
-* `TODO`
-
-
-### CoAtNet: Marrying Convolution and Attention for All Data Sizes (2021)
-
-* `Reference:` [Dai et al., (2021)][Dai et al., (2021)]
-* `TODO`
-
-### Bottom-Up and Top-Down Attention for Image Captioning and Visual Question Answering (2018)
-
-* `Reference:` [Anderson et al., (2018)][Anderson et al., (2018)]
-* `TODO`
-
-### Watch, Listen, and Describe: Globally and Locally Aligned Cross-Modal Attentions for Video Captioning (2018)
-
-* `Reference:` [Wang et al., (2018)][Wang et al., (2018)]
-* `TODO`
-
-
-### Learning Visual Representations with Caption Annotations (2020)
-
-* `Reference:` [Saryildiz et al., (2020)][Saryildiz et al., (2020)]
-* `Design new pre-training tasks`
+* `LAB`: University of North Carolina (UNC) Chapel Hill 
+* `For both VL-T5 and VL-BART, it takes 4 days for 30-epoch pretraining with mixed precision training on 4 RTX 2080 Ti GPUs.`
+* Generative pre-training with prompt-based multi-task learning.
 
 <figure>
-<img src="/images/icmlm.png" alt="ICMLM" class="center">
+<img src="/images/vl_t5.png" alt="VL-T5" class="center">
 </figure>
+
+
+It is a framework for VL learning via generating labels in text. They extend two pre-trained architecture (T5 and BART). The model tackle all tasks with the same **language modeling head**. To learn a new task, they rewrite its input and output in text, without the need of adding extra parameters or designing new architectures or objectives. In addition, it can leverage its generative design when making predictions (i.e., well designed for zero-shot and generative tasks, where discriminative methods can only answer from predefined set of frequent candidates).
+
+The mode reaches comparable performances to recent state-of-the-art VLP methods. This is interesting because it uses the same unified language modeling architecture with the same maximum likelihood estimation objective for all the tasks, while other approaches rely on task-specific architectures or objective functions (`AN: it reminds me of SimVLM claims. What is the training set size?`).
+
+T5 and BART encoders are extended as multimodal encoders by incorporating image region embeddings as additional inputs.
+
+<figure>
+<img src="/images/vl_t5_tasks.png" alt="Input-Output formats for pre-training" class="center">
+</figure>
+
+
+**Visual Embeddings**: an image is represented with $$n=36$$ object regions extracted from a Faster R-CNN trained on Visual Genome dataset. Each image region is encoded as the sum of 4 type of features:
+1. ROI object features;
+2. ROI bounding boxes coordinates;
+3. Image ids $$\in \{1,2\}$$ to discriminate regions from different images, when multiple images are provided in the same input;
+4. Region ids $$\in \{1,\dots, n\}$$;
+
+**Text Embeddings**: In addition to the original vocabulary of T5 and BART, a set of visual sentinel tokens $$ \{ \texttt{<vis_1>}, \dots, \texttt{<vis_n>}\} $$ is introduced. The embedding parameters are shared by the encoder, the decoder, and the language modeling head (`AN: I do not understand where it has been done differently!`).
+
+
+**Encoder-Decoder Architecture**: Classical Transformer encoder-decoder architecture (encoder relies on self-attention whereas the decoder has one self-attention layer as well as a cross-attention one).
+The encoder takes the concatenation of text and visual embeddings as input and outputs their contextualized joint representations. Then, the decoder iteratively attends to previously generated tokens $$y_{ < j}$$ (via self attention) and the encoder outputs $$h$$ (via cross-attention)m the predicts the probability of future text tokens (`AN: remember Teacher Forcing trick`).
+
+**Training data**: for pre-training, aggregation of MS COCO, Visual Genome images. The captioning data from these two datasets are used in the multimodal language modeling task. COCO captions are used in the image-text matching task to learn cross-modal alignment. Besides the captions, three VQA datasets (VQA v2.0, GQA balanced version, and Visual7W) are used only for the VQA task.
+
+The model is pre-trained under a multi-task setup with diverse pre-training tasks, including Multimodal Language Modeling, VQA, Image-Text Matching, Visual Grounding, and Grounded Captioning. Each task is identified via a specific prompt.
+
+
+### VirTex: Learning Visual Representations from Textual Annotations (2021)
+
+* `Reference:` [Desai et al., (2021)][Desai et al., (2020)]
+* `LAB`: University of Michigan
+* `Source Code:` [GitHub VirTex][GitHub Virtex]
+
+<figure>
+<img src="/images/virtex.png" alt="virtex" class="center">
+</figure>
+
+Contrary to [CLIP][Radford et al., (2021)], they focus on **generative** natural language supervision via image captioning task. Captions carry rich semantic information about images, including the presence of objects, attributes of objects, spatial arrangement and actions performed. They train image captioning models to predict captions from image.
+The model has two components: (1) a **visual backbone** which extracts visual features from the image input, and (2) a **textual head** that accepts the features extracted by the visual components and predicts a caption token by token. The textual head performs bi-direction captioning (bicaptioning): it comprises of a forward and a backward model. All model components are jointly trained to maximize the log-likelihood of the correct caption.
+After training they discard the textual head and transfer the visual backbone to the downstream tasks.
+
+**Language Modeling**: They also perform experiment with MLM. However, they observe that MLM training converges more slowly than directional models. Furthermore, they note point out that MLMs have poor sample efficiency since they only predict a subset of tokens for each caption, whereas the generative directional predicts all of them.
+
+**Visual Backbone**: is a convolutional NN, specifically ResNet-50.
+
+**Textual Head**: two identical Transformer, in forward and backward setting. During training the model receives two inputs: image features from the visual backbone, and a caption describing the image. It is trained to predict token-by-token starting with $$c_0$$. The prediction process is causal since it depends on the previous outputs. First, they convert the tokens of the caption $$C$$ to vectors via learned token and positional embeddings, followed by element-wise sum, layer norm and dropout.
+
+Each layer performs masked multi-head self-attention over token vectors, multi-head (cross) attention between token vectors (query) and image vectors (key-values), and applies a two-layer FC to each vector. These operations are each followed by dropout, wrapped in residual connection, and followed by layer norm. After the last transformer block, they apply a linear layer to each vector to predict un-normalized log-probability over the token vocabulary.
+
+Forward and backward model consists of independent transformer layers. However, they share the same token embedding matrix which is also reused at the output layers of each model.
+
+**Tokenization**: Sentence-Piece using BPE algorithm. Lowecase and strip accents. Vocabulary of 10k tokens. They restrict subword merges between letters and punctuation to prevent redundant tokens such as `dog?` and `dog!`.
+
+
+### SimVLM: Simple Visual Language Model Pretraining with Weak Supervision (2021)
+
+* `Reference:` [Wang et al., (2021)][Wang et al., (2021)]
+* `LAB`: Google AI
+* `AN: SimVLM is trained on 1.000.000.000+ data! (MSCOCO: 330.000, Conceptual Caps: 3.300.000, CLIP Dataset: 400.000.000)` [Jia et al., (2021)][Jia et al., (2021)]
+* `Blogpost`: [Blogpost](https://ai.googleblog.com/2021/10/simvlm-simple-visual-language-model-pre.html)
+
+<figure>
+<img src="/images/simvlm.png" alt="SimVLM" class="center">
+</figure>
+
+It follows a *minimalist approach* that takes raw images as inputs and make use of only the language modeling loss, without resorting to auxiliary models (like Fast R-CNN for image detection).
+
+They propose a new objective function: **Prefix Language Modeling (PrefixLM)**. It enables bi-directional attention on the prefix sequence (e.g., $$x_{< T p}$$), and only conducts auto-regressive factorization on the remaining tokens ($$x_{\geq T_p}$$). During pre-training, a prefix sequence of tokens of length $$T_p$$ is truncated from input sequence and the training objective becomes:
+
+$$
+\mathcal{L}_{\text{PrefixLM}} = -\mathbb{E}_{x \sim \mathcal{D}} \lbrack \log{P_{\theta}(x_{\geq T_p}|x_{< T_p})}\rbrack = -\mathbb{E}_{x \sim \mathcal{D}} \lbrack \sum_{t=T_p}^{T} P_{\theta}(x_t|x_{\lbrack T_p, t \rbrack}, x_{< T_p}) \rbrack
+$$
+
+Images can be considered as prefix for their textual descriptions as they often appear before text in a web document. Therefore, for a given image-text pair, we prepend image feature sequence of length $$T_i$$ to the text sequence, and enforce the model to sample a prefix of length $$T_p \leq T_i$$ to calculate LM loss on text data only. PrefixLM model under the sequence-to-sequence framework not only enjoys the bidirectional contextualized representation an in MLM, but also can perform text generation similar to LM.
+
+**Architecture**: PrefixLM enabled bidirectional attention within the prefix sequence, and thus it is applicable for both decoder-only and encoder-decoder sequence-to-sequence language models.
+
 
 
 ## References:
@@ -969,7 +991,7 @@ Similarly, for an image-pair $$(V, W)$$, the model is trained to reconstruct the
 
 ### Co-Learning (Transfer Learning approach to multi-modality)
 1. [Foundations of Multimodal Co-learning (Zadeh et al., (2020))][Zadeh et al., (2020)]
-2. [Multimodal Co-learning: Challenges, Applications with Datasets, Recent Advances and Future Directions (Rahate et al., (2021))][Rahate et al., (2021)] **Check this one once again**
+2. [Multimodal Co-learning: Challenges, Applications with Datasets, Recent Advances and Future Directions (Rahate et al., (2021))][Rahate et al., (2021)]
 
 ### Extras:
 21. [AdapterHub: A Framework for Adapting Transformers (Pfeiffer et al., (2020))][Pfeiffer et al., (2020)]
@@ -979,6 +1001,8 @@ Similarly, for an image-pair $$(V, W)$$, the model is trained to reconstruct the
 (Dosovitskiy et al., (2021))][Dosovitskiy et al., (2021)]
 14. [CoAtNet: Marrying Convolution and Attention for All Data Sizes
 (Dai et al., (2021))][Dai et al., (2021)]
+
+
 
 [The Annotated Transformer]: https://nlp.seas.harvard.edu/2018/04/03/attention.html
 [stack-bahdanau]: https://stats.stackexchange.com/questions/524039/why-is-bahdanaus-attention-sometimes-called-concat-attention
