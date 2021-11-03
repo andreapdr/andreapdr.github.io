@@ -784,7 +784,7 @@ The three encoders revolve around self (unimodal) and cross-attention (crossmoda
 
 * `Reference:` [Wang et al., (2021)][Wang et al., (2021)]
 * `AN: SimVLM is trained on 1.000.000.000+ data! (MSCOCO: 330.000, Conceptual Caps: 3.300.000, CLIP Dataset: 400.000.000)` [Jia et al., (2021)][Jia et al., (2021)]
-* `BLogpost`: [Blogpost](https://ai.googleblog.com/2021/10/simvlm-simple-visual-language-model-pre.html)
+* `Blogpost`: [Blogpost](https://ai.googleblog.com/2021/10/simvlm-simple-visual-language-model-pre.html)
 
 <figure>
 <img src="/images/simvlm.png" alt="SimVLM" class="center">
@@ -833,17 +833,47 @@ $$
 ### ERNIE-ViL: Knowledge Enhanced Vision-Language Representations Through Scene Graph (2021)
 
 * `Reference:` [Yu et al.,(2021)][Yu et al.,(2021)]
+* `LAB`: Baidu Inc.
 * `Leverage Scene Graph Parser to meaningfully/coherently mask part of the image-text input (New objectives: (1) Object prediction, (2) Attribute Prediction, and (3) Relationship Prediction. Nevertheless, they do also retrain the MLM and Masked Region Prediction losses. `
 
 <figure>
 <img src="/images/ernie_vil.png" alt="ERNIE-ViL" class="center">
 </figure>
 
+**Scene Graph Parsing**: The text sequence $$w$$$ is parsed into a **scene graph** `(AN: what is the difference between a Dependency Parsing Tree?)`, denoted as $$G(\textbf{w}) = < O(\textbf{w}), E(\textbf{w}), K(\textbf{w})>$$, where $$O(\textbf{w})$$ is the set of objects mentioned in the image, $$E(\textbf{w}) \subseteq O(\textbf{w}) \times R(\textbf{w}) \times O(\textbf{w})$$ is the set of hyper-edges (`AN: An edge in a hypergraph, having any number of endpoints, in contrast to the requirement that edges of graphs have exactly two endpoints.`) representing relationship triplets, and $$R(\textbf{w})$$ is the set of relationship nodes between object. $$k(\textbf{w}) \subseteq O(\textbf{w}) \times A(\textbf{w})$$ is the set of attribute pairs, where $$A(\textbf{w})$$ is he set of attribute nodes associated with object nodes.
+* Scene Graph Parser used in the paper: [SPICE: Semantic Propositional Image Caption Evaluation (Anderson et al., (2016))][Anderson et al., (2016)]. `(Haven't read this yet: however, from the slides, it leverages dependency parsing in order to construct the scene graph).`
 
 ### UNIMO: Towards Unified-Modal Understanding and Generation via Cross-Modal Contrastive Learning (2021)
 
 * `Reference:` [Li et al.,(2021)][Li et al.,(2021)]
-* `TODO`
+* `LAB`: Baidu Inc.
+* `Source code`: [UNIMO Github](https://github.com/PaddlePaddle/Research/tree/master/NLP/UNIMO)
+*  `"By virtue of float16 mixed precision training, it takes almost 7 days for training UNIMO-base with 32 Nvidia Telsa V100 32GB GPU and 10 days for UNIMO-large with 64 Nvidia Telsa V100 32GB GPU."`
+
+
+<figure>
+<img src="/images/unimo.png" alt="UNIMO" class="center">
+</figure>
+
+Given an image-text pair (i.e., the central object in the image above), two information flows are designed. The one on the left leverages a single-stream multi-modal transformer (i.e., image and text are fed into the same transformer) - here **text rewriting is deployed** in order to create negative and positive hard samples for Contrastive Learning. On the right, different modalities are processed independently. Similar images are retrieved via IR (picking images that share the most items with the original central image-text pair).
+
+**Text Rewriting**: To enhance multi-granularity of semantic alignment between text and images, the caption are rewritten at different levels (i.e., word, phrase and sentence level).
+1. Sentence level: back-translation techniques;
+2. Phrase and word-level: image caption are parsed into a scene graph. Then objects, attributes, or relations are replaced with different ones.
+
+**Image-Text Retrieval**: Each image-text pair is augmented with various related images and text that are retrieved from the uni-modal data.
+**For an image**, similar images are retrieved by prioritizing those that contain similar (detected) objects `(AN: i guess they intersect the different sets of objects that are extracted from the Fast(er) R-CNN)`.
+
+The retrieved images and text are encoded **individually** by the (uni-modal) Transformers. Then, their representations are extracted to compute the cross-modal contrastive loss. 
+
+**Visual Learning**: The visual features of the masked regions are replaced by zeros (`AN: another feature to be considered in the survey: image masking approaches`). All the regions that have a high proportion of mutual intersection are masked in order to avoid information leakage.
+For an image $$V$$, the model is trained to reconstruct the masked regions given the remaining non-masked regions.
+Similarly, for an image-pair $$(V, W)$$, the model is trained to reconstruct the masked regions given the text $$W$$ and the remaining non-masked regions. They leverage both **feature regression** and **region classification**, as well.
+
+
+**Language Learning**: The model is trained as a unified encoder-decoder model (`AN: ??`) with two types of language modeling tasks: (1) bidirectional prediction and (2) sequence-to-sequence generation. The unified modeling is achieved by utilizing specific self-attention masks to control what context the prediction conditions on. First, semantically complete phrase are detected (e.g., name entities), and then they are treated as a whole in the masking process (`AN: this is quite similar to my idea to leverage the dependency parsing as anchor. It could be also used to have a semantically-aware masking method)`. **NB: these two pre-training tasks are carried out sequentially** (`AN: in fact - I imagine - bidirectional model do not cope well with generative pre-training.`)
+1. **bidirectional prediction**: The goal is to predict the masked tokens based on their surrounding context, by minimizing the negative log-likelihood.
+2. **Seq2Swq generation**: Fragments are sampled from the captions. All selected fragments are removed from the text and concatenated as target sequence while the remaining parts are concatenated as the source sequence. The model is trained to generate the target sequence auto-regressively
 
 ### VIVO: Visual Vocabulary Pre-Training for Novel Object Captioning (2021)
 
@@ -853,7 +883,7 @@ $$
 ### VL-T5: Unifying Vision-and-Language Tasks via Text Generation (2021)
 
 * `Reference:` [Cho et al.,(2021)][Cho et al.,(2021)]
-* `TODO`
+* `LAB`: Microsoft
 
 
 ### Seeing Out of tHe bOx: End-to-End Pre-training for Vision-Language Representation Learning (2021)
@@ -1028,3 +1058,4 @@ $$
 [Vadicamo et al., (2017)]: https://openaccess.thecvf.com/content_ICCV_2017_workshops/papers/w5/Vadicamo_Cross-Media_Learning_for_ICCV_2017_paper.pdf
 [GitHub Virtex]: https://github.com/kdexd/virtex
 
+[Anderson et al., (2016)]: https://arxiv.org/abs/1607.08822
