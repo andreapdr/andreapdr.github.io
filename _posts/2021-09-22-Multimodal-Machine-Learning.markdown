@@ -263,8 +263,8 @@ ViLBERT consists of two parallel BERT-style models operating over image regions 
 **Image representations**: Images lack a natural ordering, thus authors encode spatial location instead, constructing a 5-d vector from region position (normalized top-left and bottom-right coordinates), and the fraction of the image area covered. This is then projected to match the dimension of the visual features and they are summed (positional encoding).
 
 **Training task and objectives**:
-1. *Masked multi-modal alignment*: predict if caption describes the image.
-2. *Multi-modal prediction*: for images, masked textual inputs is handled as in BERT. For **images**: the model is set to predict a distribution over the semantic classes for the corresponding are image. To supervise this, authors take the output distribution for the region from the same pre-trained detection model used in feature extraction. **The model is trained to minimize the KL divergence between the two distribution**.
+1. *Multimodal alignment prediction*: predict if caption describes the image.
+2. *Masked Multimodal modeling*: for images, masked textual inputs is handled as in BERT. For **images**: the model is set to predict a distribution over the semantic classes for the corresponding are image. To supervise this, authors take the output distribution for the region from the same pre-trained detection model used in feature extraction. **The model is trained to minimize the KL divergence between the two distribution**.
 
 
 ### Cross-Modal Self-Attention for Referring Image Segmentation (2019)
