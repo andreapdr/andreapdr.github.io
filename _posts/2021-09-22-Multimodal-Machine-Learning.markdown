@@ -36,12 +36,17 @@ description: Can't learn language from the radio.
 10. [Cross-Modal Self-Attention for Referring Image Segmentation (2019)](#cross-modal-self-attention-for-referring-image-segmentation-2019)
 6. [Multimodal Transformer for Unaligned Multimodal Language Sequences (2019)](#multimodal-transformer-for-unaligned-multimodal-language-sequences-2019)
 17. [VisualBERT: A Simple and Performant Baseline for Vision and Language (2019)](#visualbert-a-simple-and-performant-baseline-for-vision-and-language-2019)
+19. [B2T2: Fusion of Detected Objects in Text for Visual Question Answering (2019)](#b2t2-fusion-of-detected-objects-in-text-for-visual-question-answering-2019)
 7. [VL-BERT: Pre-training of Generic Visual-Linguistic Representations (2019)](#vl-bert-pre-training-of-generic-visual-linguistic-representations-2019)
 18. [LXMERT: Learning Cross-Modality Encoder Representations from Transformers (2019)](#lxmert-learning-cross-modality-encoder-representations-from-transformers-2019)
 16. [Unicoder-VL: A Universal Encoder for Vision and Language by Cross-modal Pre-training (2019)](#unicoder-vl-a-universal-encoder-for-vision-and-language-by-cross-modal-pre-training-2019)
+10. [Unified Vision-Language Pre-Training for Image Captioning and VQA (2019)](#unified-vision-language-pre-training-for-image-captioning-and-vqa-2019)
 9. [Multi-Modality Cross-Attention Network for Image and Sentence Matching (2020)](#multi-modality-cross-attention-network-for-image-and-sentence-matching-2020)
+10. [ImageBERT: Cross-modal Pre-training with Large-scale Weak-supervised Image-Text Data (2020)](#imagebert-cross-modal-pre-training-with-large-scale-weak-supervised-image-text-data-2020)
+10. [Pixel-BERT: Aligning Image Pixels with Text by Deep Multi-Modal Transformers (2020)](#pixel-bert-aligning-image-pixels-with-text-by-deep-multi-modal-transformers-2020)
 12. [Oscar: Object-Semantics Aligned Pre-training for Vision-Language Tasks (2020)](#oscar-object-semantics-aligned-pre-training-for-vision-language-tasks-2020)
 15. [UNITER: UNiversal Image-TExt Representation Learning (2020)](#uniter-universal-image-text-representation-learning-2020)
+16. [12-in-1: Multi-Task Vision and Language Representation Learning (2020)](#multi-task-vision-and-language-representation-learning-2020)
 21. [Villa: Large-Scale Adversarial Training for Vision-and-Language Representation Learning (2020)](#villa-large-scale-adversarial-training-for-vision-and-language-representation-learning-2020)
 5. [MAG-BERT: Integrating Multimodal Information in Large Pretrained Transformers (2020)](#mag-bert-integrating-multimodal-information-in-large-pretrained-transformers-2020)
 11. [Learning Transferable Visual Models From Natural Language Supervision (2021)](#learning-transferable-visual-models-from-natural-language-supervision-2021)
@@ -406,6 +411,7 @@ Multimodal features are extracted as follows:
 * `Reference:` [Harold Li et al., (2019)][Harold Li et al., (2019)]
 * `LAB`: Allen AI
 * `Concurrent works: VideoBERT, ViLBERT.`
+* `Source code:` [VisualBERT GitHub](https://github.com/uclanlp/visualbert)
 
 <figure>
 <img src="/images/visual_bert.png" alt="VisualBERT" class="center">
@@ -415,7 +421,7 @@ VisualBERT consists of a stack of transformer layers that implicitly align eleme
 
 The core idea of is to reuse the self-attention mechanism within the Transformer to implicitly align elements of the input text and regions in the input image. In addition to all the components of BERT, a set of visual embeddings, $$F$$, is introduced to model the image. Each $$f \in F$$ corresponds to a **bounding image, derived from an object detector**.
 
-Each embedding in $$FF$$ is computed by summing three embeddings:
+Each embedding in $$F$$ is computed by summing three embeddings:
 1. $$f_o$$, a visual feature representation of the bounding region of $$f$$, computed by a CNN;
 2. $$f_s$$, a segment embedding indicating it is an image embedding as opposed to a text embedding; 
 3. $$f_p$$, a position embedding.
@@ -425,10 +431,46 @@ VisualBERT is pre-trained on the COCO dataset with the following objectives:
 2. Sentence-Image Prediction: the model is provided with a text segment containing two captions. One of the caption is describing the image, while the other has a 50% chance to be another corresponding caption (`AN: in COCO dataset, each image has 5 correct but different captions`), and a 50% change to be a randomly drawn caption. The model is trained to distinguish these two situations.
 
 
+### B2T2: Fusion of Detected Objects in Text for Visual Question Answering (2019)
+
+* `Reference:` [Alberti et al., (2019)][Alberti et al., (2019)]
+* `LAB`: Google Research
+* `Source code`: [B2T2 GitHub](https://github.com/google-research/language/tree/master/language/question_answering/b2t2)
+* `AN: interesting paper: they do compare late-fusion to early-fusion approach (Dual Encoder vs. B2T2)`
+* `AN: they modify the original (BERT) uni-modal embedding by summing them with additional information coming from the image domain. They do so by leveraging ALGINED word-image (at word level, i.e., they have annotated bounding-boxes). Whenever an area of image (bounding box) is referenced by a token, that token is summed up with the features extracted via OD from the corresponding region, and the respective geometry embedding. Then, these representations are fed to a uni-modal transformer.`
+* `AN: Reminds me of MAG-BERT (i.e., it operates a shift on the textual embedding)`
+
+
+<figure>
+<img src="/images/b2t2.png" alt="B2T2">
+</figure>
+
+B2T2 models the class distribution as:
+
+$$
+p(l|I, B, R, T) = \frac{\exp{\Psi(E'(I, B, R, T))\cdot a_l, b_l}}{\sum_{l'}\exp{\Psi(E'(I, B, R, T)) \cdot a_{l'}, b_{l'}}}
+$$
+
+where $$a_l \in \mathbb{R}^h$$ and $$b_l \in \mathbb{R}$$ for $$l \in \{0,1\}$$ are learned parameters. The function $$ E'(I, B, R, T) $$ is a non-contextualized representation for each token and of its position in text, but also of the content (i.e., the image features) and position of the bounding boxes (whereas $$\Psi$$ takes care of computing the contextualized representations). It is computed as:
+
+$$
+E'(I, B, R, T) = E(T) + \sum_{i=1}^{m} R_{i} \lbrack M(\Phi (\text{crop}(I, b_i)) + \pi (b_i)) \rbrack^T
+$$
+
+the first component takes care of computing the textual embedding $$E(T)$$. In the summation, instead, $$M$$ is a learned $$h \times d $$ matrix, $$ \Phi (\text{crop}(I, b_i) $$ denotes cropping image $$I$$ to bounding box $$b_i$$, and then extracting a visual feature vector of size $$d$$ and $$\pi(b_i)$$ is its geometry embedding. The matrix $$R \in \{0,1\}^{m \times n}$$ encode the references between the bounding boxes so that $$R_{ij}$$ is 1 if and only if bounding box $$i$$ is referenced by token $$j$$.
+
+Geometry embedding is a 4-D vector encoding coordinates of opposite corners projected via two learnable matrices.
+
+The model is first pretrained on image-caption pairs (from Conceptual Captions) using MLM technique and Sentence-Image prediction, as well.
+The model is trained with binary cross-entropy loss. It 
+
+* NB: `In the implementation, BERT-Large provides both for` $$E$$ `(the non-contextualized token embeddings, encoding word-piece ids, token types and positions), and` $$\Psi$$ `(a function to compute a passage embeddings from per-token embeddings)`
+
 ### VL-BERT: Pre-training of Generic Visual-Linguistic Representations (2019)
 
-*  `Reference:` [Su et al., (2019)][Su et al., (2019)]
+* `Reference:` [Su et al., (2019)][Su et al., (2019)]
 * `LAB`: University of Science and Technology China + Microsoft Research Asia
+* `Source code`: [VL-BERT GitHub] (https://github.com/jackroos/VL-BERT)
 
 <figure>
 <img src="/images/vl_bert.png" alt="vlbert">
@@ -439,7 +481,7 @@ Three types of inputs are involved (1) visual, (2) linguistic, and (3) special e
 
 **Token Embeddings**: the linguistic input is embedded via Word-Piece embeddings with a 30.000 vocabulary. **For the visual elements, a special \[IMG\] token is assigned to each one of them**.
 
-**Visual Feature Embeddings**: For the visual element corresponding to a RoI, the representation is extracted via a **Fast** R-CNN detector (specifically, the hidden representation preceding the output layer, 2048 dimensional vector). The non-visual elements are, instead, assigned to vectors extracted from the whole input image (i.e., **Faster** R-CNN on a RoI covering the whole input image -the pixels in the masked ROI are set to zeros before applying Fast R-CNN). **How many ROIs can be fed as input?**
+**Visual Feature Embeddings**: For the visual element corresponding to a RoI, the representation is extracted via a **Fast** R-CNN detector (specifically, the hidden representation preceding the output layer, 2048 dimensional vector). The non-visual elements are, instead, assigned to vectors extracted from the whole input image (i.e., **Faster** R-CNN on a RoI covering the whole input image -the pixels in the masked ROI are set to zeros before applying Fast R-CNN). At least 10 RoI are extracted. 
 
 **Segment Embeddings**: Three types, A, B, and C. Simply designed to separate different input elements. A and B for textual input (Question/Answer, or Answer/Reason etc.), C for the image.
 
@@ -447,8 +489,9 @@ Three types of inputs are involved (1) visual, (2) linguistic, and (3) special e
 
 Model is trained on two tasks:
 1. Masked Language Modeling with Visual Clues: the task drives the network to not only model the dependencies in sentence words, but also to align the visual and linguistic content. For example in "*kitten drinking from \[MASK\]*", without the input image, the masked word could be any container.
-2. Masked RoI Classification with Linguistic Clues: to avoid any visual clue leakage from the visual feature embedding of other elements, the pixels in the masked ROI are set to zeros before applying Fast R-CNN. The category label for the masked RoI is predicted by pre-trained Faster R-CNN. For a sample drawn from the BooksCorpurs & English Wikipedia datasets, the input format *degenerates* to only text. In such a scenario, the visual feature embedding is a learnable emebedding shared for all words.
+2. Masked RoI Classification with Linguistic Clues: to avoid any visual clue leakage from the visual feature embedding of other elements, the pixels in the masked ROI are set to zeros before applying Fast R-CNN. The category label for the masked RoI is predicted by pre-trained Faster R-CNN. For a sample drawn from the BooksCorpurs & English Wikipedia datasets, the input format *degenerates* to only text. In such a scenario, the visual feature embedding is a learnable embedding shared for all words.
 
+* Textual Sequence length is  64 tokens - double check this!
 
 ### LXMERT: Learning Cross-Modality Encoder Representations from Transformers (2019)
 
@@ -526,11 +569,27 @@ $$
 where $$I[y = 1]$$ is and indicator function for the label 1 being correct for the image-caption pair.
 
 
+### Unified Vision-Language Pre-Training for Image Captioning and VQA (2019)
+* `Reference:` [Zhou et al., (2019)][Zhou et al., (2019)]
+* `LAB:` Microsoft Research
+* `AN: Unified in the sense that it does not even require task-specic heads. CFR 12-in-1: Multitask Vision and Language Representation Learning (2020).`
+
+<figure>
+<img src="/images/vlp.png" alt="VLP" class="center">
+</figure>
+
+The paper present a **unified** VLP model that can be fine-tuned for both vision-language generation (e.g., image captioning) and understanding (e.g., VQA, VCR). The model is pre-trained on large amounts of image-text pairs based on **two objective** (alternated between batches at training time):
+1. Bidirectional MLM
+2. Seq2Seq MLM
+
+`"The only difference between the two objectives are lie in the self-attention mask. The mask used for the bidirectional objective allows unrestricted message passing between the visual modality and the language modality. The Seq2Seq, the to-be-predicted words can only attend to past words, i.e., it satisfies the auto-regressive property."`
+
 ### Multi-Modality Cross-Attention Network for Image and Sentence Matching (2020)
 
 * `Reference:` [Wei et al., (2020)][Wei et al., (2020)]
 * `LAB`: University of Science and Technology of China
 * `TASK SPECIFIC: Image-Text Retrieval`
+
 <figure>
 <img src="/images/mmca.png" alt="MMCA architecture" class="center">
 </figure>
@@ -566,11 +625,43 @@ $$
 which models both the inter-modality (self-attention) as well as the cross-modality (cross-attention) at the same time.
 
 
+### ImageBERT: Cross-modal Pre-training with Large-scale Weak-supervised Image-Text Data (2020)
+
+* `Reference:` [Qi et al., (2020)][Qi et al., (2020)]
+* `LAB:` Bing and Microsoft Research
+* `Source Code`: [ImageBERT GitHub](https://github.com/LuoweiZhou/VLP)
+* `They define a pipeline to collect weakly-supervised <text, image> pairs` 
+
+<figure>
+<img src="/images/imagebert.png" alt="imageBERT" class="center">
+</figure>
+
+
+
+### Pixel-BERT: Aligning Image Pixels with Text by Deep Multi-Modal Transformers (2020)
+
+* `Reference:` [Huang et al., (2020)][Huang et al., (2020)]
+* `LAB:` Microsoft Research
+* `With the introduction of the Visual Genome Dataset and the proposal of Bottom-Up and Top-Down Attention model, most recent VLP methods utilize region-based features extracted from OD (e.g., Faster R-CNN) for better performance. However, region-bases visual feature extractors are designed for specific visual tasks (e.g., object detection), and this will cause an information gap with language understanding`
+* `"We pre-train Pixel-BERT on 64 NVIDIA Tesla V100 GPUs with the batch size 4096 samples for 40 epoch"`
+
+<figure>
+<img src="/images/pixelbert.png" alt="Pixel-BERT" class="center">
+</figure>
+
+u
+Single-stream architecture. **Sentence Feature Embeddings**: usual BERT embedding. **Image Feature Embeddings**: CNN backbone (ResNet) to extract image feature. Then the feature map is flattened along the spatial dimension. The visual embedding feature can be computed by taking its sum with an semantic embedding $$s_v$$ vector to distinguish the difference with language embedding. SInce all pixel share the same $$s_v$$, this embedding vector can be considered as a bias term to be combined with the CNN backbone. A $$2 \times 2$$ max pooling is deployed to reduce the spatial dimension of visual feature maps. The spatial size of input image will be down-sampled by 64 times in total.
+
+After obtaining sentence embedding vectors and pixel features are concatenated and fed to a transformer architecture. The CNN is trained jointly with the transformer (thus, it should overcome limitations such as rectangular shape-box with noisy backgrounds, spatial relations, emotions recognition).
+
+**Pre-training**: MLM and Sentence-Image Matching. They improve the robustness of feature learning and avoid overfitting by randomly sample feature pixel during pre-training.
+
 ### Oscar: Object-Semantics Aligned Pre-training for Vision-Language Tasks (2020)
 
 * `Reference:` [Li et al., (2020)][Li et al., (2020)]
+* `LAB:` Microsoft
 * `Learning method which uses object tags detected in images as anchor points to ease the learning of alignments`.
-* `AN: what kind of SIGNAL SUPERVISION can we exploit to align different modalities? We could try with span from from the dependency parsing - alberto sintagmatico UD dependencies`
+* `AN: what kind of SIGNAL SUPERVISION can we exploit to align different modalities? We could try with span from from the dependency parsing via UD dependencies`
 
 <figure>
 <img src="/images/oscar.png" alt="oscar" class="center">
@@ -613,7 +704,7 @@ $$
 * `The sequence length of discrete tokens `$$h$$` and region features `$$v$$` are 35 and 50, respectively.`
 
 
-### UNITER: UNiversal Image-TExt Representation Learning (2020)
+### UNITER: Universal Image-Text Representation Learning (2020)
 
 * `Reference:` [Chen et al., (2020)][Chen et al., (2020)]
 * `LAB`: Microsoft Dynamics 365 AI Research
@@ -630,7 +721,7 @@ UNITER is pre-trained through **four different tasks**:
 	\mathcal{L}_{\text{MLM}} = -\mathbb{E}_{(\mathbf{w,v}) \sim \mathcal{D}} \log{P_{\theta}(\mathbf{w_m}|\mathbf{w_{\setminus m}, v})}
 	$$
 
-2. **Image-Text Matching (IMR)**: Inputs are (sentence, image) pairs. A negative pair is created by replacing the image or the text in paired sample with a randomly-selected one from other samples. The model has to predict whether the pair is legit or polluted. 
+2. **Image-Text Matching (ITM)**: Inputs are (sentence, image) pairs. A negative pair is created by replacing the image or the text in paired sample with a randomly-selected one from other samples. The model has to predict whether the pair is legit or polluted. 
 
 	$$
 	\mathcal{L}_{\text{ITM}} = -\mathbb{E}_{(\mathbf{w,v}) \sim \mathcal{D}}\lbrack y \log{s_{\theta}(\mathbf{w,v}) + (1-y)\log{(1-s_{\theta}(\mathbf{w,v}))}} \rbrack
@@ -653,6 +744,28 @@ UNITER is pre-trained through **four different tasks**:
 	$$
 
 * **TODO**
+
+
+### Multi-Task Vision and Language Representation Learning (2020)
+
+* `Reference:` [Lu et al., (2020)]
+* `LAB:` Facebook AI Research
+* `AN: Not 100% sure. They propose a multi-task FINE-TUNING strategy so that to obtain a single model able to deal with four different tasks. Nevertheless, the pre-training (generic) procedure remains almost the same (1. Multimodal alignment prediction tasks are performed ONLY on aligned image-caption pairs - i.e., the contrastive polluted example are excluded - 2. Mask highly overlapping image regions).`
+
+<figure>
+<img src="/images/12in1.png" alt="12in1" class="center">
+</figure>
+
+A multi-task approach (experiments are performed on a model based on ViLBERT) for discriminative vision-and-language tasks. The model is designed to deal with four categories of tasks, and trained jointly on a total of 12 different datasets.
+To address variation in dataset sizes and difficulties, dynamic stop-and-go scheduler, task dependent input tokens, and simple hyper-parameters heuristics are introduced.
+
+
+The article analyzes the joint training relationship between different VL datasets and tasks (`AN: I do not understand. Do they train the model directly on all the 12 different tasks, or do they first pre-train ViLBERT as "usual" and the fine-tune it in a multi-task fashion?`). They propose two modification to ViLBERT pre-training:
+1. When masking **visual regions** they also mask regions with significant overlap (> 0.4 IoU) to avoid leaking visual information;
+2. The do not enforce the masked multi-modal modelling loss when sampling a negative (unmatching) caption for multi-modal alignment prediction.
+
+In the proposed multi-task model each task has a task-specific "head" network that branches off a common, shared "trunk" ViLBERT model. They introduce a task token `[TASK]` that the architecture can leverage in a bottom-up manner (it encodes in it task-specific information `AN: I guess :D`). 
+
 
 ### Villa: Large-Scale Adversarial Training for Vision-and-Language Representation Learning (2020) 
 
@@ -969,10 +1082,17 @@ Images can be considered as prefix for their textual descriptions as they often 
 
 **Architecture**: PrefixLM enabled bidirectional attention within the prefix sequence, and thus it is applicable for both decoder-only and encoder-decoder sequence-to-sequence language models.
 
+## Datasets
+1. Visual Genome
+1. MS-COCO
+1. Conceptual Captions
+1. SBU Captions
+1. Flicker 30k
+1. `[TODO]`
 
+# References:
 
-## References:
-### Cross-Modal Architectures
+## Cross-Modal Architectures
 
 1. [Multimodal Transformer for Unaligned Multimodal Language Sequences (Tsai et al., (2019))][Tsai et al., (2019)]
 2. [VL-BERT: Pre-training of Generic Visual-Linguistic Representation (Su et al., (2019))][Su et al., (2019)]
@@ -994,7 +1114,7 @@ Images can be considered as prefix for their textual descriptions as they often 
 19. [Oscar: Object-Semantics Aligned Pre-training for Vision-Language Tasks (Li et al., (2020))][Li et al., (2020)]
 20. [VinVL: Revisiting Visual Representations in Vision-Language Models (Zhang et al., (2021))][Zhang et al., (2021)]
 22. [VirTex: Learning Visual Representations from Textual Annotations (Desai et al., (2020))][Desai et al., (2020)]
-23. [UNITER: UNiversal Image-TExt Representation Learning (Chen et al., (2020))][Chen et al., (2020)]
+23. [UNITER: Universal Image-Text Representation Learning (Chen et al., (2020))][Chen et al., (2020)]
 24. [Unicoder-VL: A Universal Encoder for Vision and Language by Cross-modal Pre-training (Li et al., (2019))][Li et al., (2019)]
 25. [VisualBERT: A Simple and Performant Baseline for Vision and Language (Harold Li et al., (2019))][Harold Li et al., (2019)]
 26. [LXMERT: Learning Cross-Modality Encoder Representations from Transformers (Tan et al., (2019))][Tan et al., (2019)]
@@ -1003,17 +1123,17 @@ Images can be considered as prefix for their textual descriptions as they often 
 30. [VideoBERT: A Joint Model for Video and Language Representation Learning (Sun et al., (2019))][Sun et al., (2019)]
 31. [SimVLM: Simple Visual Language Model Pretraining with Weak Supervision (Wang et al., (2021))][Wang et al., (2021)]
 
-### Surveys:
+## Surveys:
 1. [Multimodal Research in Vision and Language: A Review of Current and Emerging Trends (Uppal et al., (2020))][Uppal et al., (2020)]
 2. [A Survey on Vision Transformer (Han et al., (2021))][Han et al., (2021)]
 3. [Transformers in Vision: A Survey (Khan et al., (2021))][Khan et al., (2021)]
 
 
-### Co-Learning (Transfer Learning approach to multi-modality)
+## Co-Learning (Transfer Learning approach to multi-modality)
 1. [Foundations of Multimodal Co-learning (Zadeh et al., (2020))][Zadeh et al., (2020)]
 2. [Multimodal Co-learning: Challenges, Applications with Datasets, Recent Advances and Future Directions (Rahate et al., (2021))][Rahate et al., (2021)]
 
-### Extras:
+## Extras:
 21. [AdapterHub: A Framework for Adapting Transformers (Pfeiffer et al., (2020))][Pfeiffer et al., (2020)]
 17. [xGQA: Cross-Lingual Visual Question Answering (Pfeiffer et al., (2021))][Pfeiffer et al., (2021)]
 12. [BERT has a Mouth, and It Must Speak: BERT as a Markov Random Field Language Model (Wang et al., (2019))][Wang et al., (2019)]
@@ -1021,6 +1141,7 @@ Images can be considered as prefix for their textual descriptions as they often 
 (Dosovitskiy et al., (2021))][Dosovitskiy et al., (2021)]
 14. [CoAtNet: Marrying Convolution and Attention for All Data Sizes
 (Dai et al., (2021))][Dai et al., (2021)]
+15. [CVPR20 Tutorial on Self-Supervised Vision-Language](https://www.youtube.com/watch?v=C4UQWJcp7w4&t=86s)
 
 
 
@@ -1104,3 +1225,8 @@ Images can be considered as prefix for their textual descriptions as they often 
 [GitHub Virtex]: https://github.com/kdexd/virtex
 
 [Anderson et al., (2016)]: https://arxiv.org/abs/1607.08822
+[Lu et al., (2020)]: https://arxiv.org/abs/1912.02315
+[Alberti et al., (2019)]: https://arxiv.org/abs/1908.05054
+[Huang et al., (2020)]: https://arxiv.org/abs/2004.00849
+[Zhou et al., (2019)]: https://arxiv.org/abs/1909.11059
+[Qi et al., (2020)]: https://arxiv.org/abs/2001.07966
