@@ -32,7 +32,7 @@ description: Can't learn language from the radio.
 2. [Memory Fusion Network for Multi-view Sequential Learning (2018)](#memory-fusion-network-for-multi-view-sequential-learning-2018)
 3. [Multi-Attention Recurrent Network for Human Communication Comprehension (2018)](#multi-attention-recurrent-network-for-human-communication-comprehension-2018)
 4. [Multimodal Language Analysis with Recurrent Multistage Fusion (2018)](#multimodal-language-analysis-with-recurrent-multistage-fusion-2018)
-8. [ViLBERT: Pretraining Task-Agnostic Visiolinguistic Representation fro Vision-and-Language Tasks (2019)](#vilbert-pretraining-task-agnostic-visiolinguistic-representation-fro-vision-and-language-tasks-2019)
+8. [ViLBERT: Pretraining Task-Agnostic Visiolinguistic Representation from Vision-and-Language Tasks (2019)](#vilbert-pretraining-task-agnostic-visiolinguistic-representation-from-vision-and-language-tasks-2019)
 10. [Cross-Modal Self-Attention for Referring Image Segmentation (2019)](#cross-modal-self-attention-for-referring-image-segmentation-2019)
 6. [Multimodal Transformer for Unaligned Multimodal Language Sequences (2019)](#multimodal-transformer-for-unaligned-multimodal-language-sequences-2019)
 17. [VisualBERT: A Simple and Performant Baseline for Vision and Language (2019)](#visualbert-a-simple-and-performant-baseline-for-vision-and-language-2019)
@@ -241,7 +241,7 @@ $$
 where $$z_t$$ is the final output of the multistage fusion process and represents all cross-modal interactions discovered at time $$t$$. The summarized cross-modal interaction is then fed into the intra-modal recurrent network.
 
 
-### ViLBERT: Pretraining Task-Agnostic Visiolinguistic Representation fro Vision-and-Language Tasks (2019)
+### ViLBERT: Pretraining Task-Agnostic Visiolinguistic Representation from Vision-and-Language Tasks (2019)
 
 * `Reference:` [Lu et al., (2019)][Lu et al., (2019)]
 * `LAB`: Georgia Institute of Technology, Oregon State University, Facebook AI Research
@@ -470,7 +470,7 @@ The model is trained with binary cross-entropy loss. It
 
 * `Reference:` [Su et al., (2019)][Su et al., (2019)]
 * `LAB`: University of Science and Technology China + Microsoft Research Asia
-* `Source code`: [VL-BERT GitHub] (https://github.com/jackroos/VL-BERT)
+* `Source code`: [VL-BERT GitHub](https://github.com/jackroos/VL-BERT)
 
 <figure>
 <img src="/images/vl_bert.png" alt="vlbert">
@@ -1230,3 +1230,4 @@ Images can be considered as prefix for their textual descriptions as they often 
 [Huang et al., (2020)]: https://arxiv.org/abs/2004.00849
 [Zhou et al., (2019)]: https://arxiv.org/abs/1909.11059
 [Qi et al., (2020)]: https://arxiv.org/abs/2001.07966
+[Tan et al., (2020)]: https://arxiv.org/abs/2010.06775
