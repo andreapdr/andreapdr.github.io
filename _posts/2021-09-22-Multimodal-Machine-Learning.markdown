@@ -548,7 +548,7 @@ Unicoder-VL takes the visual regions of the image and textual tokens of the sent
 	\mathcal{L}_{\text{MLM}} = -\mathbb{E}_{(w,v) \sim \mathcal{D}} \log{P_{\theta}(w_m|w_{\setminus m}, v)}
 	$$
 
-2. **Masked Object Classification (MOC)**: Sample image regions and mask the visual features with probability of 15%. Replace the object feature vector with a zero-initialized vector $$v_m$$ 90% of the time, and keep the object feature unchanged in the remaining 10%. As target: take the object detected by the Fast R-CNN with the highest confidence score $$c(v_m^{(i)}).
+2. **Masked Object Classification (MOC)**: Sample image regions and mask the visual features with probability of 15%. Replace the object feature vector with a zero-initialized vector $$v_m$$ 90% of the time, and keep the object feature unchanged in the remaining 10%. As target: take the object detected by the Fast R-CNN with the highest confidence score $$c(v_m^{(i)})$$.
 
 	$$
 	\mathcal{L}_{\text{MOC}} = -\mathbb{E}_{(w,v) \sim \mathcal{D}} \sum_{i=1}^{M}\text{CE}(c(v_m^{(i)}), g_{\theta}(v_m^{(i)}))
