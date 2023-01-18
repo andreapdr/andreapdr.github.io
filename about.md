@@ -18,6 +18,8 @@ My main interests lay in the `Heterogeneous Representation Learning` field, with
 
 I have received my master's degree in Digital Humanities at the University of Pisa with the thesis `"Heterogeneous Document Embeddings for Cross-Lingual Text-Classification"`, supervised by Fabrizio Sebastiani and Alejandro Moreo.
 
+During 2022, I have spent a few months at the HD NLP Group of Heidelberg University (Germany) under the supervision of Prof. Dr. Anette Frank.
+
 You can find my :
 - projects at [GitHub][my-github]
 - publications on [Scholar][my-scholar]
