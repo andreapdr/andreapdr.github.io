@@ -18,7 +18,7 @@ Hi 👋 My name is Andrea Pedrotti and I am a PhD Student in Computer Science at
 
 My primary interests lie in  representation learning, both at large and small scale, with a particular interests in `heterogeneous transfer learning`, I like playing with different domains such as languages and perceptual modalities within `multimodal` and `multilingual` settings.
 
-I have received my master's degree in Digital Humanities at the University of Pisa with the thesis `Heterogeneous Document Embeddings for Cross-Lingual Text-Classification`, supervised by Dr. Fabrizio Sebastiani and Dr. Alejandro Moreo.
+I have received my master's degree in Digital Humanities at the University of Pisa with a thesis on `Cross-Lingual Text-Classification`, supervised by Dr. Fabrizio Sebastiani and Dr. Alejandro Moreo.
 
 During 2022, I have spent a few months at the <a href="https://www.cl.uni-heidelberg.de/nlpgroup/">HD NLP Group</a> of `Heidelberg University` under the supervision of Prof. Dr. Anette Frank working on the assessment of Video-and-Language Models.
 
@@ -44,9 +44,7 @@ For any question, feel free to drop me an email at <a class="u-email" href="mail
 <a href="https://www.cl.uni-heidelberg.de/colloquium/cl_colloquium/">`Colloquium Talk Heidelberg`</a>, "What’s In An Action? A benchmark for Video-and-Language models through the lens
 of change-of-state verbs"
 
-<!-- <a href="">`Maruania Pesaresi Seminar Series`</a> -->
-
-# Experience
+<!-- # Experience
 
 `CNR research positions`
 
@@ -60,4 +58,4 @@ of change-of-state verbs"
 
 `AI4Media`
 
-`Moore?!`
+`Moore?!` -->
