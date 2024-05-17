@@ -14,7 +14,7 @@ img {width: 30%;float:right;}
 
 <img src="/imgs/andrea_blog.png" alt="some years have passed, though">
 
-Hi 👋 My name is Andrea Pedrotti and I am a PhD Student in Computer Science at the `University of Pisa`. I am also a research fellow at the `Institute of Information Science and Technologies` at the `National Council of Reseach` (ISTI-CNR) where I am a member of `AI4Text` group inside the `Artificial Intelligence for Media and Humanities laboratory` (AIMH).
+Hi 👋 My name is Andrea Pedrotti and I am a PhD Student in Computer Science at the `University of Pisa`. I am also a research fellow at the `Institute of Information Science and Technologies` of the `National Council of Research` (ISTI-CNR) where I am a member of `AI4Text` group at the `Artificial Intelligence for Media and Humanities laboratory` (AIMH).
 
 My primary interests lie in  representation learning, both at large and small scale, with a particular interests in `heterogeneous transfer learning`, I like playing with different domains such as languages and perceptual modalities within `multimodal` and `multilingual` settings.
 
