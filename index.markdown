@@ -14,7 +14,7 @@ img {width: 30%;float:right;}
 
 <img src="/imgs/andrea_blog.png" alt="some years have passed, though">
 
-Hi 👋 My name is Andrea Pedrotti and I am a PhD Student in Computer Science at the `University of Pisa`. I am also a research fellow at the `Institute of Information Science and Technologies` of the `National Council of Research` (ISTI-CNR) where I am a member of `AI4Text` group at the `Artificial Intelligence for Media and Humanities laboratory` (AIMH).
+Hi 👋 My name is Andrea Pedrotti and I am currently a Post-Doc at the `Institute of Information Science and Technologies` of the `National Council of Research` (ISTI-CNR). Here, I am a member of `AI4Text` group in the `Artificial Intelligence for Media and Humanities laboratory` (AIMH). I have obtained my PhD in Computer Science from the `University of Pisa`, with the thesis `Heterogeneous Transfer Learning in Natural Language Processing`.
 
 My primary interests lie in  representation learning, both at large and small scale, with a particular interests in `heterogeneous transfer learning`, I like playing with different domains such as languages and perceptual modalities within `multimodal` and `multilingual` settings.
 
@@ -24,12 +24,12 @@ During 2022, I have spent a few months at the <a href="https://www.cl.uni-heidel
 
 In 2023, I have visited the <a href="https://ltl.mmll.cam.ac.uk/">Language Technology Lab</a> at `Cambridge Univeristy`, where I have worked on the interplay between multi-language and multi-modal models together with Dr. Ivan Vulić.
 
-For any question, feel free to drop me an email at <a class="u-email" href="mailto:{{ site.email2 }}">`{{ site.email }}`</a> 🙃
+For any question, feel free to drop me an email at <a class="u-email" href="mailto:{{ site.email2 }}">`{{ site.email2 }}`</a> 🙃
 
 
 # Publications
 
-* <a href="https://arxiv.org/abs/2311.07022">`ViLMA: A Zero-Shot Benchmark for Linguistic and Temporal Grounding in Video-Language Models`</a> Ilker Kesen, **Andrea Pedrotti**, Moustafa Dogan et al. 2023. In Proceedings of the 12th International Conference on Learning Representations (ICRL24)
+* <a href="https://arxiv.org/abs/2311.07022">`ViLMA: A Zero-Shot Benchmark for Linguistic and Temporal Grounding in Video-Language Models`</a> Ilker Kesen, **Andrea Pedrotti**, Moustafa Dogan et al. 2023. In Proceedings of the 12th International Conference on Learning Representations (ICLR24)
 
 * <a href="https://doi.org/10.1145/3544104">`Generalized Funnelling: Ensemble Learning and Heterogeneous Document Embeddings for Cross-Lingual Text Classification.`</a> Alejandro Moreo, **Andrea Pedrotti**, and Fabrizio Sebastiani. 2022. ACM Transactions on Information Systems 41 (TOIS)
 
