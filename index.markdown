@@ -22,7 +22,7 @@ I have received my master's degree in Digital Humanities at the University of Pi
 
 During 2022, I have spent a few months at the <a href="https://www.cl.uni-heidelberg.de/nlpgroup/">HD NLP Group</a> of `Heidelberg University` under the supervision of Prof. Dr. Anette Frank working on the assessment of Video-and-Language Models.
 
-In 2023, I have visited the <a href="https://ltl.mmll.cam.ac.uk/">Language Technology Lab</a> at `Cambridge Univeristy`, where I have worked on the interplay between multi-language and multi-modal models together with Dr. Ivan Vulić.
+In 2023, I have visited the <a href="https://ltl.mmll.cam.ac.uk/">Language Technology Lab</a> at `Cambridge University`, where I have worked on the interplay between multi-language and multi-modal models together with Dr. Ivan Vulić.
 
 For any question, feel free to drop me an email at <a class="u-email" href="mailto:{{ site.email2 }}">`{{ site.email2 }}`</a> 🙃
 
