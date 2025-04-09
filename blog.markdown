@@ -1,7 +1,5 @@
 ---
 layout: page
-title: Blog
-permalink: /blog/
+title: AI4Text
+permalink: https://hlt-isti.github.io/
 ---
-
-# Maybe Bloggin'
