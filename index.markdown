@@ -31,11 +31,14 @@ For any question, feel free to drop me an email at <a class="u-email" href="mail
 
 # Publications
 
-* <a href="https://andreapdr.github.io/">`How Humans and LLMs Organize Conceptual Knowledge: Exploring Subordinate Categories in Italian`</a> **Andrea Pedrotti**, Giulia Rambelli, Caterina Villani, and Marianna Bolognesi. 2025. In Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (ACL 2025).
+* <a href="https://2025.aclweb.org/">`How Humans and LLMs Organize Conceptual Knowledge: Exploring Subordinate Categories in Italian.`</a> **Andrea Pedrotti**, Giulia Rambelli, Caterina Villani, and Marianna Bolognesi. 2025. Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (ACL 2025).
 
-* <a href="https://andreapdr.github.io/">`Stress-testing Machine Generated Text Detection: Shifting Language Models Writing Style to Fool Detectors`</a> **Andrea Pedrotti**, Michele Papucci, Cristiano Ciaccio, Alessio Miaschi, Giovanni Puccetti, Felice Dell'Orletta, and Andrea Esuli. 2025. In Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (ACL 2025).
+* <a href="https://2025.aclweb.org/">`Stress-testing Machine Generated Text Detection: Shifting Language Models Writing Style to Fool Detectors.`</a> **Andrea Pedrotti**, Michele Papucci, Cristiano Ciaccio, Alessio Miaschi, Giovanni Puccetti, Felice Dell'Orletta, and Andrea Esuli. 2025. Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (ACL 2025).
 
-* <a href="https://arxiv.org/abs/2311.07022">`ViLMA: A Zero-Shot Benchmark for Linguistic and Temporal Grounding in Video-Language Models`</a> Ilker Kesen, **Andrea Pedrotti**, Moustafa Dogan et al. 2023. In Proceedings of the 12th International Conference on Learning Representations (ICLR 2024)
+* <a href="https://ceur-ws.org/Vol-3928/paper_101.pdf">`Multimodal Heterogeneous Transfer Learning for Multilingual Image-Text Classification.`</a> **Andrea Pedrotti**, Alejandro Moreo, and Fabrizio Sebastiani. 2024. Late-Breaking Contributions at the 27th International Conference on Discovery
+Science (DS 2024).
+
+* <a href="https://arxiv.org/abs/2311.07022">`ViLMA: A Zero-Shot Benchmark for Linguistic and Temporal Grounding in Video-Language Models.`</a> Ilker Kesen, **Andrea Pedrotti**, Moustafa Dogan et al. 2023. In Proceedings of the 12th International Conference on Learning Representations (ICLR 2024)
 
 * <a href="https://doi.org/10.1145/3544104">`Generalized Funnelling: Ensemble Learning and Heterogeneous Document Embeddings for Cross-Lingual Text Classification.`</a> Alejandro Moreo, **Andrea Pedrotti**, and Fabrizio Sebastiani. 2022. ACM Transactions on Information Systems 41 (TOIS)
 
