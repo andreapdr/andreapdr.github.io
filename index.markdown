@@ -42,7 +42,7 @@ Science (DS 2024).
 
 * <a href="https://doi.org/10.1145/3544104">`Generalized Funnelling: Ensemble Learning and Heterogeneous Document Embeddings for Cross-Lingual Text Classification.`</a> Alejandro Moreo, **Andrea Pedrotti**, and Fabrizio Sebastiani. 2022. ACM Transactions on Information Systems 41 (TOIS)
 
-* <a href="https://doi.org/10.1145/3412841.3442093">`Heterogeneous Document Embeddings for Cross-Lingual Text Classification`</a> Alejandro Moreo, **Andrea Pedrotti**, and Fabrizio Sebastiani. 2021. In Proceedings of the 36th Annual ACM Symposium on Applied Computing (SAC 2021)
+* <a href="https://doi.org/10.1145/3412841.3442093">`Heterogeneous Document Embeddings for Cross-Lingual Text Classification.`</a> Alejandro Moreo, **Andrea Pedrotti**, and Fabrizio Sebastiani. 2021. In Proceedings of the 36th Annual ACM Symposium on Applied Computing (SAC 2021)
 
 # Talks & Seminars
 
@@ -50,5 +50,4 @@ Science (DS 2024).
 
 <a href="https://talks.cam.ac.uk/talk/index/207655">`Seminar Series Cambridge`</a>, "ViLMA: A Zero-Shot Benchmark for Linguistic and Temporal Grounding in Video-Language Models"
 
-<a href="https://www.cl.uni-heidelberg.de/colloquium/cl_colloquium/">`Colloquium Talk Heidelberg`</a>, "What’s In An Action? A benchmark for Video-and-Language models through the lens
-of change-of-state verbs"
+<a href="https://www.cl.uni-heidelberg.de/colloquium/cl_colloquium/">`Colloquium Talk Heidelberg`</a>, "What’s In An Action? A benchmark for Video-and-Language models through the lens of change-of-state verbs"
