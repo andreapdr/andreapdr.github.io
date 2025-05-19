@@ -16,7 +16,7 @@ img {width: 30%;float:right;}
 
 Hi 👋 My name is Andrea Pedrotti and I am currently a Post-Doc at the `Institute of Information Science and Technologies` of the `National Council of Research` (ISTI-CNR). Here, I am a member of the <a href="https://hlt-isti.github.io/">AI4Text Group</a> in the `Artificial Intelligence for Media and Humanities laboratory`. I have obtained my PhD in Computer Science from the `University of Pisa`, with the thesis `Heterogeneous Transfer Learning in Natural Language Processing`.
 
-My primary interests lie in  representation learning, both at large and small scale, with a particular interests in `heterogeneous transfer learning`, I like playing with different domains such as languages and perceptual modalities within `multimodal` and `multilingual` settings.
+My primary interests lie in  representation learning, both at large and small scale, with a particular interests in `heterogeneous transfer learning`, I like experimenting with different domains such as languages and perceptual modalities within `multimodal` and `multilingual` settings.
 
 I have received my master's degree in Digital Humanities at the University of Pisa with a thesis on `Cross-Lingual Text-Classification`, supervised by Dr. Fabrizio Sebastiani and Dr. Alejandro Moreo.
 
