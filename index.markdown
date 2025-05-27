@@ -14,7 +14,7 @@ img {width: 30%;float:right;}
 
 <img src="/imgs/andrea_blog.png" alt="some years have passed, though">
 
-Hi 👋 My name is Andrea Pedrotti and I am currently a Post-Doc at the `Institute of Information Science and Technologies` of the `National Council of Research` (ISTI-CNR). Here, I am a member of the <a href="https://hlt-isti.github.io/">AI4Text Group</a> in the `Artificial Intelligence for Media and Humanities laboratory`. I have obtained my PhD in Computer Science from the `University of Pisa`, with the thesis `Heterogeneous Transfer Learning in Natural Language Processing`.
+Hi 👋 My name is Andrea Pedrotti and I am currently a Post-Doc at the <a href="https://www.isti.cnr.it/it/chi-siamo/people-detail/833/Andrea_Pedrotti">Institute of Information Science and Technologies</a> of the `National Council of Research` (ISTI-CNR). Here, I am a member of the <a href="https://hlt-isti.github.io/">AI4Text Group</a> in the `Artificial Intelligence for Media and Humanities laboratory`. I have obtained my PhD in Computer Science from the `University of Pisa`, with the thesis `Heterogeneous Transfer Learning in Natural Language Processing`.
 
 My primary interests lie in  representation learning, both at large and small scale, with a particular interests in `heterogeneous transfer learning`, I like experimenting with different domains such as languages and perceptual modalities within `multimodal` and `multilingual` settings.
 
@@ -31,18 +31,18 @@ For any question, feel free to drop me an email at <a class="u-email" href="mail
 
 # Recent Publications:
 
-* <a href="https://2025.aclweb.org/">`How Humans and LLMs Organize Conceptual Knowledge: Exploring Subordinate Categories in Italian.`</a> <a href="https://www.isti.cnr.it/it/chi-siamo/people-detail/833/Andrea_Pedrotti">Andrea Pedrotti</a>, Giulia Rambelli, Caterina Villani, and Marianna Bolognesi. 2025. Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (ACL 2025).
+* <a href="https://2025.aclweb.org/">`How Humans and LLMs Organize Conceptual Knowledge: Exploring Subordinate Categories in Italian.`</a> **Andrea Pedrotti**, Giulia Rambelli, Caterina Villani, and Marianna Bolognesi. 2025. Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (ACL 2025).
 
-* <a href="https://2025.aclweb.org/">`Stress-testing Machine Generated Text Detection: Shifting Language Models Writing Style to Fool Detectors.`</a> <a href="https://www.isti.cnr.it/it/chi-siamo/people-detail/833/Andrea_Pedrotti">Andrea Pedrotti</a>, Michele Papucci, Cristiano Ciaccio, Alessio Miaschi, Giovanni Puccetti, Felice Dell'Orletta, and Andrea Esuli. 2025. Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (ACL 2025).
+* <a href="https://2025.aclweb.org/">`Stress-testing Machine Generated Text Detection: Shifting Language Models Writing Style to Fool Detectors.`</a> **Andrea Pedrotti**</a>, Michele Papucci, Cristiano Ciaccio, Alessio Miaschi, Giovanni Puccetti, Felice Dell'Orletta, and Andrea Esuli. 2025. Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (ACL 2025).
 
-* <a href="https://ceur-ws.org/Vol-3928/paper_101.pdf">`Multimodal Heterogeneous Transfer Learning for Multilingual Image-Text Classification.`</a> <a href="https://www.isti.cnr.it/it/chi-siamo/people-detail/833/Andrea_Pedrotti">Andrea Pedrotti</a>, Alejandro Moreo, and Fabrizio Sebastiani. 2024. Late-Breaking Contributions at the 27th International Conference on Discovery
+* <a href="https://ceur-ws.org/Vol-3928/paper_101.pdf">`Multimodal Heterogeneous Transfer Learning for Multilingual Image-Text Classification.`</a> **Andrea Pedrotti**</a>, Alejandro Moreo, and Fabrizio Sebastiani. 2024. Late-Breaking Contributions at the 27th International Conference on Discovery
 Science (DS 2024).
 
-* <a href="https://openreview.net/forum?id=liuqDwmbQJ">`ViLMA: A Zero-Shot Benchmark for Linguistic and Temporal Grounding in Video-Language Models.`</a> Ilker Kesen, <a href="https://www.isti.cnr.it/it/chi-siamo/people-detail/833/Andrea_Pedrotti">Andrea Pedrotti</a>, Moustafa Dogan et al. 2023. In Proceedings of the 12th International Conference on Learning Representations (ICLR 2024)
+* <a href="https://openreview.net/forum?id=liuqDwmbQJ">`ViLMA: A Zero-Shot Benchmark for Linguistic and Temporal Grounding in Video-Language Models.`</a> Ilker Kesen, **Andrea Pedrotti**, Moustafa Dogan et al. 2023. In Proceedings of the 12th International Conference on Learning Representations (ICLR 2024)
 
-* <a href="https://doi.org/10.1145/3544104">`Generalized Funnelling: Ensemble Learning and Heterogeneous Document Embeddings for Cross-Lingual Text Classification.`</a> Alejandro Moreo, <a href="https://www.isti.cnr.it/it/chi-siamo/people-detail/833/Andrea_Pedrotti">Andrea Pedrotti</a>, and Fabrizio Sebastiani. 2022. ACM Transactions on Information Systems 41 (TOIS)
+* <a href="https://doi.org/10.1145/3544104">`Generalized Funnelling: Ensemble Learning and Heterogeneous Document Embeddings for Cross-Lingual Text Classification.`</a> Alejandro Moreo, **Andrea Pedrotti**, and Fabrizio Sebastiani. 2022. ACM Transactions on Information Systems 41 (TOIS)
 
-* <a href="https://doi.org/10.1145/3412841.3442093">`Heterogeneous Document Embeddings for Cross-Lingual Text Classification.`</a> Alejandro Moreo, <a href="https://www.isti.cnr.it/it/chi-siamo/people-detail/833/Andrea_Pedrotti">Andrea Pedrotti</a>, and Fabrizio Sebastiani. 2021. In Proceedings of the 36th Annual ACM Symposium on Applied Computing (SAC 2021)
+* <a href="https://doi.org/10.1145/3412841.3442093">`Heterogeneous Document Embeddings for Cross-Lingual Text Classification.`</a> Alejandro Moreo, **Andrea Pedrotti**, and Fabrizio Sebastiani. 2021. In Proceedings of the 36th Annual ACM Symposium on Applied Computing (SAC 2021)
 
 # Talks & Seminars
 
