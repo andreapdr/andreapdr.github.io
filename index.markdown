@@ -8,7 +8,8 @@ layout: default
 
 <style>
 
-img {width: 30%;float:right;}
+img {width: 20%;float:right;}
+.wrapper {max-width:calc(1100px - (30px * 2));}
 
 </style>
 
