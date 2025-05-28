@@ -8,7 +8,7 @@ layout: default
 
 <style>
 
-img {width: 30%;float:right;box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.5);}
+img {width: 30%;float:right;}
 
 </style>
 
