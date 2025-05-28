@@ -14,11 +14,11 @@ img {width: 30%;float:right;}
 
 <img src="/imgs/andrea_blog.png" alt="some years have passed, though">
 
-Hi 👋 My name is Andrea Pedrotti and I am currently a Post-Doc at the <a href="https://www.isti.cnr.it/it/chi-siamo/people-detail/833/Andrea_Pedrotti">Institute of Information Science and Technologies</a> of the `National Council of Research` (ISTI-CNR). Here, I am a member of the <a href="https://hlt-isti.github.io/">AI4Text Group</a> in the `Artificial Intelligence for Media and Humanities laboratory`. I have obtained my PhD in Computer Science from the `University of Pisa`, with the thesis `Heterogeneous Transfer Learning in Natural Language Processing`.
+Hi 👋 My name is Andrea Pedrotti and I am currently a Post-Doc at the <a href="https://www.isti.cnr.it/it/chi-siamo/people-detail/833/Andrea_Pedrotti">Institute of Information Science and Technologies</a> of the `National Council of Research` (ISTI-CNR). Here, I am a member of the <a href="https://hlt-isti.github.io/">AI4Text Group</a> in the `Artificial Intelligence for Media and Humanities laboratory`. I have obtained my PhD in Computer Science from the `University of Pisa`, with the thesis <a href="https://etd.adm.unipi.it/t/etd-09132024-151709/">Heterogeneous Transfer Learning in Natural Language Processing</a>.
 
 My primary interests lie in  representation learning, both at large and small scale, with a particular interests in `heterogeneous transfer learning`, I like experimenting with different domains such as languages and perceptual modalities within `multimodal` and `multilingual` settings.
 
-I have received my master's degree in Digital Humanities at the University of Pisa with a thesis on `Cross-Lingual Text-Classification`, supervised by Dr. Fabrizio Sebastiani and Dr. Alejandro Moreo.
+I have received my master's degree in Digital Humanities at the University of Pisa with a thesis on Cross-Lingual Text-Classification, supervised by Dr. Fabrizio Sebastiani and Dr. Alejandro Moreo.
 
 During 2022, I have spent a few months at the <a href="https://www.cl.uni-heidelberg.de/nlpgroup/">HD NLP Group</a> of `Heidelberg University` under the supervision of Prof. Dr. Anette Frank working on the assessment of Video-and-Language Models.
 
@@ -46,7 +46,7 @@ Science (DS 2024).
 
 # Talks & Seminars
 
-<a href="https://www.cnr.it/it/eventi/allegato/13756">`First CNR-DFKI workshop on AI Technologies`</a> where I have represented the `AI4Text` group talking about our current research directions and discussed the future scenarios of the NLP field.
+<a href="https://www.cnr.it/it/eventi/allegato/13756">`First CNR-DFKI workshop on AI Technologies`</a> where I have represented the <a href="https://hlt-isti.github.io/">AI4Text</a> group talking about our current research directions and discussed the future scenarios of the NLP field.
 
 <a href="https://talks.cam.ac.uk/talk/index/207655">`Seminar Series Cambridge`</a>, "ViLMA: A Zero-Shot Benchmark for Linguistic and Temporal Grounding in Video-Language Models"
 
