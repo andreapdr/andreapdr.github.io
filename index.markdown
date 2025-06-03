@@ -31,9 +31,9 @@ For any question, feel free to drop me an email at <a class="u-email" href="mail
 
 # Recent Publications:
 
-* <a href="https://arxiv.org/abs/2505.21301v1">`How Humans and LLMs Organize Conceptual Knowledge: Exploring Subordinate Categories in Italian.`</a> **Andrea Pedrotti**, Giulia Rambelli, Caterina Villani, and Marianna Bolognesi. 2025. Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (ACL 2025).
+* <a href="https://arxiv.org/abs/2505.21301">`How Humans and LLMs Organize Conceptual Knowledge: Exploring Subordinate Categories in Italian.`</a> **Andrea Pedrotti**, Giulia Rambelli, Caterina Villani, and Marianna Bolognesi. 2025. Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (ACL 2025).
 
-* <a href="https://2025.aclweb.org/">`Stress-testing Machine Generated Text Detection: Shifting Language Models Writing Style to Fool Detectors.`</a> **Andrea Pedrotti**, Michele Papucci, Cristiano Ciaccio, Alessio Miaschi, Giovanni Puccetti, Felice Dell'Orletta, and Andrea Esuli. 2025. Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Findings of ACL 2025).
+* <a href="https://arxiv.org/abs/2505.24523">`Stress-testing Machine Generated Text Detection: Shifting Language Models Writing Style to Fool Detectors.`</a> **Andrea Pedrotti**, Michele Papucci, Cristiano Ciaccio, Alessio Miaschi, Giovanni Puccetti, Felice Dell'Orletta, and Andrea Esuli. 2025. Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Findings of ACL 2025).
 
 * <a href="https://ceur-ws.org/Vol-3928/paper_101.pdf">`Multimodal Heterogeneous Transfer Learning for Multilingual Image-Text Classification.`</a> **Andrea Pedrotti**, Alejandro Moreo, and Fabrizio Sebastiani. 2024. Late-Breaking Contributions at the 27th International Conference on Discovery
 Science (DS 2024).
