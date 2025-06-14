@@ -1,0 +1,13 @@
+---
+---
+
+@import "minima";
+
+.wrapper {
+  max-width: -webkit-calc(1000px - (30px * 2));  /* Safari/older browsers */
+  max-width: calc(1000px - (30px * 2));          /* Modern browsers */
+  margin-right: auto;                           /* Center horizontally */
+  margin-left: auto;                            /* Center horizontally */
+  padding-right: 30px;                          /* Right inner spacing */
+  padding-left: 30px;                           /* Left inner spacing */
+}
