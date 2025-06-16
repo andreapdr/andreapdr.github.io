@@ -8,11 +8,11 @@ layout: default
 
 <style>
 
-img {width: 30%;float:right;}
+img {width: 30%;float:right;box-shadow: 5px 5px 5px #999;margin-left: 40px; margin-bottom: 20px; margin-right:auto;}
 
 </style>
 
-<img src="/imgs/andrea_blog.png" alt="some years have passed, though">
+<img src="/imgs/apedrotti.jpg" alt="some years have passed, though">
 
 Hi 👋 My name is Andrea Pedrotti and I am currently a Post-Doc at the <a href="https://www.isti.cnr.it/it/chi-siamo/people-detail/833/Andrea_Pedrotti">Institute of Information Science and Technologies</a> of the `National Council of Research` (ISTI-CNR). Here, I am a member of the <a href="https://hlt-isti.github.io/">AI4Text Group</a> in the `Artificial Intelligence for Media and Humanities laboratory`. I have obtained my PhD in Computer Science from the `University of Pisa`, with the thesis <a href="https://etd.adm.unipi.it/t/etd-09132024-151709/">Heterogeneous Transfer Learning in Natural Language Processing</a>.
 
@@ -26,8 +26,7 @@ In 2023, I have visited the <a href="https://ltl.mmll.cam.ac.uk/">Language Techn
 
 Check out my <a href="https://scholar.google.com/citations?user=ec7IvDsAAAAJ&hl=it&oi=ao"> Google Scholar profile </a> to find out the latest updates on my research.
 
-For any question, feel free to drop me an email at <a class="u-email" href="mailto:{{ site.email2 }}">`{{ site.email2 }}`</a> 🙃
-
+For any question, feel free to drop me an email at <a class="u-email" href="mailto:{{ site.email2 }}">`{{ site.email2 }}`</a> or connect on <a href="https://www.linkedin.com/in/andreapedrotti/">LinkedIn</a> 🙃
 
 # Recent Publications:
 
